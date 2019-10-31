@@ -1,0 +1,28 @@
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\DAL\bin\Debug\DAL.dll.config
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\DAL\bin\Debug\DAL.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\DAL\bin\Debug\DAL.pdb
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\DAL\obj\Debug\DAL.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\DAL\obj\Debug\DAL.pdb
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\DAL\bin\Debug\DAL.dll.config
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\DAL\bin\Debug\DAL.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\DAL\bin\Debug\DAL.pdb
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\DAL\obj\Debug\DAL.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\DAL\obj\Debug\DAL.pdb
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\DAL\bin\Debug\DAL.dll.config
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\DAL\bin\Debug\DAL.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\DAL\bin\Debug\DAL.pdb
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\DAL\obj\Debug\DAL.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\DAL\obj\Debug\DAL.pdb
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\DAL\obj\Debug\DAL.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\DAL\obj\Debug\DAL.pdb
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\DAL\bin\Debug\DAL.dll.config
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\DAL\bin\Debug\DAL.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\DAL\bin\Debug\DAL.pdb

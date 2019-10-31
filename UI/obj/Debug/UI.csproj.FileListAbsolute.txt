@@ -1,0 +1,459 @@
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.csprojAssemblyReference.cache
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.Properties.Resources.resources
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.csproj.GenerateResource.cache
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.exe.licenses
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\UI.exe
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\UI.pdb
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\BLL.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.BonusSkins.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.Data.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.Printing.v17.1.Core.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.Sparkline.v17.1.Core.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.Utils.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.XtraBars.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.XtraEditors.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\Entities.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\BLL.pdb
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\Entities.pdb
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.Data.v17.1.xml
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.Printing.v17.1.Core.xml
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.Utils.v17.1.xml
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.XtraBars.v17.1.xml
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.Sparkline.v17.1.Core.xml
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.XtraEditors.v17.1.xml
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\de\DevExpress.XtraBars.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\es\DevExpress.XtraBars.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\ja\DevExpress.XtraBars.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\ru\DevExpress.XtraBars.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\de\DevExpress.Sparkline.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\es\DevExpress.Sparkline.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\ja\DevExpress.Sparkline.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\ru\DevExpress.Sparkline.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\de\DevExpress.XtraEditors.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\es\DevExpress.XtraEditors.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\ja\DevExpress.XtraEditors.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\ru\DevExpress.XtraEditors.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.csproj.CopyComplete
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.exe
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.pdb
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyThueDia.resources
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyTieuDe.resources
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyDanhMuc.resources
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyKhoDia.resources
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyKhachHang.resources
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.Form_Main.resources
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.Form_QuanLy.Form_DangNhap.resources
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.Form_QuanLy.Form_DoiMatKhau.resources
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.Form_QuanLy.Form_ThongTinCaNhan.resources
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DAL.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DAL.pdb
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\bin\Debug\DAL.dll.config
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyDatDia.resources
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyPhiTre.resources
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\UI.exe
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\UI.pdb
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\BLL.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DAL.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.BonusSkins.v17.1.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Data.v17.1.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Printing.v17.1.Core.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Sparkline.v17.1.Core.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Utils.v17.1.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraBars.v17.1.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraEditors.v17.1.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\Entities.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\BLL.pdb
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DAL.pdb
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DAL.dll.config
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\Entities.pdb
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Data.v17.1.xml
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Printing.v17.1.Core.xml
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Utils.v17.1.xml
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraBars.v17.1.xml
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Sparkline.v17.1.Core.xml
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraEditors.v17.1.xml
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.XtraBars.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.XtraBars.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.XtraBars.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.XtraBars.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Sparkline.v17.1.Core.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Sparkline.v17.1.Core.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Sparkline.v17.1.Core.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Sparkline.v17.1.Core.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.XtraEditors.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.XtraEditors.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.XtraEditors.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.XtraEditors.v17.1.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyDatDia.resources
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyKhachHang.resources
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyPhiTre.resources
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyThueDia.resources
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyTieuDe.resources
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyDanhMuc.resources
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyKhoDia.resources
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_Main.resources
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_QuanLy.Form_DangNhap.resources
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_QuanLy.Form_DoiMatKhau.resources
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_QuanLy.Form_ThongTinCaNhan.resources
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.exe.licenses
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.csproj.CopyComplete
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.exe
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.pdb
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_About.resources
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\UI.exe
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\UI.pdb
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\BLL.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DAL.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.BonusSkins.v17.1.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Data.v17.1.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Printing.v17.1.Core.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Sparkline.v17.1.Core.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Utils.v17.1.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraBars.v17.1.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraEditors.v17.1.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\Entities.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\BLL.pdb
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DAL.pdb
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DAL.dll.config
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\Entities.pdb
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Data.v17.1.xml
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Printing.v17.1.Core.xml
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Utils.v17.1.xml
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraBars.v17.1.xml
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Sparkline.v17.1.Core.xml
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraEditors.v17.1.xml
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.XtraBars.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.XtraBars.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.XtraBars.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.XtraBars.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Sparkline.v17.1.Core.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Sparkline.v17.1.Core.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Sparkline.v17.1.Core.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Sparkline.v17.1.Core.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.XtraEditors.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.XtraEditors.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.XtraEditors.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.XtraEditors.v17.1.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.csprojAssemblyReference.cache
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_About.resources
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyDatDia.resources
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyKhachHang.resources
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyPhiTre.resources
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyThueDia.resources
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyTieuDe.resources
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyDanhMuc.resources
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyKhoDia.resources
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_Main.resources
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_QuanLy.Form_DangNhap.resources
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_QuanLy.Form_DoiMatKhau.resources
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_QuanLy.Form_ThongTinCaNhan.resources
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.Properties.Resources.resources
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.csproj.GenerateResource.cache
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.exe.licenses
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.csproj.CopyComplete
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.exe
+G:\New folder\XDPM_CD_PROJECT\UI\obj\Debug\UI.pdb
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\UI.exe
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\UI.pdb
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\BLL.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DAL.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.BonusSkins.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Data.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Printing.v17.1.Core.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Sparkline.v17.1.Core.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Utils.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraBars.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraEditors.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\Entities.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\BLL.pdb
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DAL.pdb
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DAL.dll.config
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\Entities.pdb
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Data.v17.1.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Printing.v17.1.Core.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Utils.v17.1.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraBars.v17.1.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Sparkline.v17.1.Core.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraEditors.v17.1.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.XtraBars.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.XtraBars.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.XtraBars.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.XtraBars.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Sparkline.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Sparkline.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Sparkline.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Sparkline.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.XtraEditors.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.XtraEditors.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.XtraEditors.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.XtraEditors.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.csprojAssemblyReference.cache
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_About.resources
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyDatDia.resources
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyKhachHang.resources
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyPhiTre.resources
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyThueDia.resources
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyTieuDe.resources
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyDanhMuc.resources
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyKhoDia.resources
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_Main.resources
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_QuanLy.Form_DangNhap.resources
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_QuanLy.Form_DoiMatKhau.resources
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_QuanLy.Form_ThongTinCaNhan.resources
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Properties.Resources.resources
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.csproj.GenerateResource.cache
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.exe.licenses
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.csproj.CopyComplete
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.exe
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.pdb
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraGrid.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraPrinting.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraScheduler.v17.1.Core.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraScheduler.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraLayout.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.RichEdit.v17.1.Core.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraTreeList.v17.1.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Office.v17.1.Core.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraGrid.v17.1.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraPrinting.v17.1.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraScheduler.v17.1.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraScheduler.v17.1.Core.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraLayout.v17.1.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.RichEdit.v17.1.Core.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.XtraTreeList.v17.1.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\DevExpress.Office.v17.1.Core.xml
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.XtraGrid.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.XtraGrid.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.XtraGrid.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.XtraGrid.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.XtraPrinting.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.XtraPrinting.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.XtraPrinting.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.XtraPrinting.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.XtraScheduler.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.XtraScheduler.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.XtraScheduler.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.XtraScheduler.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.XtraScheduler.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.XtraScheduler.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.XtraScheduler.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.XtraScheduler.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.XtraLayout.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.XtraLayout.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.XtraLayout.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.XtraLayout.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.RichEdit.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.RichEdit.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.RichEdit.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.RichEdit.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.XtraTreeList.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.XtraTreeList.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.XtraTreeList.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.XtraTreeList.v17.1.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\de\DevExpress.Office.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\es\DevExpress.Office.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ja\DevExpress.Office.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\bin\Debug\ru\DevExpress.Office.v17.1.Core.resources.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_TraDia.resources
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\UI\obj\Debug\UI.Form_ChucNang.Form_ThongBao_ThueDiaToPhiThue.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\UI.exe
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\UI.pdb
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\BLL.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DAL.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.BonusSkins.v17.1.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.Data.v17.1.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.Printing.v17.1.Core.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.Sparkline.v17.1.Core.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.Utils.v17.1.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraBars.v17.1.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraEditors.v17.1.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraGrid.v17.1.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraPrinting.v17.1.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraScheduler.v17.1.Core.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraScheduler.v17.1.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\Entities.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraLayout.v17.1.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.RichEdit.v17.1.Core.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraTreeList.v17.1.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.Office.v17.1.Core.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\BLL.pdb
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DAL.pdb
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DAL.dll.config
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\Entities.pdb
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.Data.v17.1.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.Printing.v17.1.Core.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.Utils.v17.1.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraBars.v17.1.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.Sparkline.v17.1.Core.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraEditors.v17.1.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraGrid.v17.1.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraPrinting.v17.1.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraScheduler.v17.1.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraScheduler.v17.1.Core.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraLayout.v17.1.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.RichEdit.v17.1.Core.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.XtraTreeList.v17.1.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\DevExpress.Office.v17.1.Core.xml
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.XtraBars.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.XtraBars.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.XtraBars.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.XtraBars.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.Sparkline.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.Sparkline.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.Sparkline.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.Sparkline.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.XtraEditors.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.XtraEditors.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.XtraEditors.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.XtraEditors.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.XtraGrid.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.XtraGrid.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.XtraGrid.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.XtraGrid.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.XtraPrinting.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.XtraPrinting.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.XtraPrinting.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.XtraPrinting.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.XtraScheduler.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.XtraScheduler.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.XtraScheduler.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.XtraScheduler.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.XtraScheduler.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.XtraScheduler.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.XtraScheduler.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.XtraScheduler.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.XtraLayout.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.XtraLayout.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.XtraLayout.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.XtraLayout.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.RichEdit.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.RichEdit.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.RichEdit.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.RichEdit.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.XtraTreeList.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.XtraTreeList.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.XtraTreeList.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.XtraTreeList.v17.1.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\de\DevExpress.Office.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\es\DevExpress.Office.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ja\DevExpress.Office.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\bin\Debug\ru\DevExpress.Office.v17.1.Core.resources.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Form_About.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyDatDia.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyKhachHang.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyPhiTre.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyThueDia.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyTieuDe.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyDanhMuc.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Form_ChucNang.Form_QuanLyKhoDia.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Form_ChucNang.Form_ThongBao_ThueDiaToPhiThue.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Form_ChucNang.Form_TraDia.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Form_Main.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Form_QuanLy.Form_DangNhap.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Form_QuanLy.Form_DoiMatKhau.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Form_QuanLy.Form_ThongTinCaNhan.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.exe.licenses
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.csproj.CopyComplete
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.exe
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\UI\obj\Debug\UI.pdb

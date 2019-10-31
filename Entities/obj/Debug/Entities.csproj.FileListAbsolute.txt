@@ -1,0 +1,30 @@
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\Entities\bin\Debug\Entities.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\Entities\bin\Debug\Entities.pdb
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\Entities\obj\Debug\Entities.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\Entities\obj\Debug\Entities.pdb
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\Entities\bin\Debug\Entities.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\Entities\bin\Debug\Entities.pdb
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\Entities\obj\Debug\Entities.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\Entities\obj\Debug\Entities.pdb
+G:\New folder\XDPM_CD_PROJECT\Entities\bin\Debug\Entities.dll
+G:\New folder\XDPM_CD_PROJECT\Entities\bin\Debug\Entities.pdb
+G:\New folder\XDPM_CD_PROJECT\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+G:\New folder\XDPM_CD_PROJECT\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+G:\New folder\XDPM_CD_PROJECT\Entities\obj\Debug\Entities.dll
+G:\New folder\XDPM_CD_PROJECT\Entities\obj\Debug\Entities.pdb
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\Entities\bin\Debug\Entities.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\Entities\bin\Debug\Entities.pdb
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\Entities\obj\Debug\Entities.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\Entities\obj\Debug\Entities.pdb
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\Entities\bin\Debug\Entities.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\Entities\bin\Debug\Entities.pdb
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\Entities\obj\Debug\Entities.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\Entities\obj\Debug\Entities.pdb

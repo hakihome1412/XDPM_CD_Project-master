@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C20F5820-30AA-447D-818F-F8EEA5BE052C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1" />
+    <Reference Include="DevExpress.Data.v17.1" />
+    <Reference Include="DevExpress.Printing.v17.1.Core" />
+    <Reference Include="DevExpress.Utils.v17.1" />
+    <Reference Include="DevExpress.XtraBars.v17.1" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v17.1" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_About.Designer.cs">
+      <DependentUpon>Form_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_QuanLyDatDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_QuanLyDatDia.Designer.cs">
+      <DependentUpon>Form_QuanLyDatDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_QuanLyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_QuanLyKhachHang.Designer.cs">
+      <DependentUpon>Form_QuanLyKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_QuanLyPhiTre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_QuanLyPhiTre.Designer.cs">
+      <DependentUpon>Form_QuanLyPhiTre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_QuanLyThueDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_QuanLyThueDia.Designer.cs">
+      <DependentUpon>Form_QuanLyThueDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_QuanLyTieuDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_QuanLyTieuDe.Designer.cs">
+      <DependentUpon>Form_QuanLyTieuDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_QuanLyDanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_QuanLyDanhMuc.Designer.cs">
+      <DependentUpon>Form_QuanLyDanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_QuanLyKhoDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_QuanLyKhoDia.Designer.cs">
+      <DependentUpon>Form_QuanLyKhoDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_ThongBao_ThueDiaToPhiThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_ThongBao_ThueDiaToPhiThue.Designer.cs">
+      <DependentUpon>Form_ThongBao_ThueDiaToPhiThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_TraDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChucNang\Form_TraDia.Designer.cs">
+      <DependentUpon>Form_TraDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QuanLy\Form_DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QuanLy\Form_DangNhap.Designer.cs">
+      <DependentUpon>Form_DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QuanLy\Form_DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QuanLy\Form_DoiMatKhau.Designer.cs">
+      <DependentUpon>Form_DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QuanLy\Form_ThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QuanLy\Form_ThongTinCaNhan.Designer.cs">
+      <DependentUpon>Form_ThongTinCaNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_About.resx">
+      <DependentUpon>Form_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChucNang\Form_QuanLyDatDia.resx">
+      <DependentUpon>Form_QuanLyDatDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChucNang\Form_QuanLyKhachHang.resx">
+      <DependentUpon>Form_QuanLyKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChucNang\Form_QuanLyPhiTre.resx">
+      <DependentUpon>Form_QuanLyPhiTre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChucNang\Form_QuanLyThueDia.resx">
+      <DependentUpon>Form_QuanLyThueDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChucNang\Form_QuanLyTieuDe.resx">
+      <DependentUpon>Form_QuanLyTieuDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChucNang\Form_QuanLyDanhMuc.resx">
+      <DependentUpon>Form_QuanLyDanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChucNang\Form_QuanLyKhoDia.resx">
+      <DependentUpon>Form_QuanLyKhoDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChucNang\Form_ThongBao_ThueDiaToPhiThue.resx">
+      <DependentUpon>Form_ThongBao_ThueDiaToPhiThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChucNang\Form_TraDia.resx">
+      <DependentUpon>Form_TraDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QuanLy\Form_DangNhap.resx">
+      <DependentUpon>Form_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QuanLy\Form_DoiMatKhau.resx">
+      <DependentUpon>Form_DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QuanLy\Form_ThongTinCaNhan.resx">
+      <DependentUpon>Form_ThongTinCaNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{afe76509-f7b1-4657-a7af-575082ec44c7}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{f131f0a3-7bea-482a-8e25-9738d00fbe9d}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{96c8fd35-ffad-419e-8fc4-2365b50bc1d5}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Form_BaoCao\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

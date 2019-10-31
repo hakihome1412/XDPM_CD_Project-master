@@ -1,0 +1,60 @@
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\BLL\bin\Debug\BLL.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\BLL\bin\Debug\BLL.pdb
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\BLL\bin\Debug\DAL.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\BLL\bin\Debug\Entities.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\BLL\bin\Debug\DAL.pdb
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\BLL\bin\Debug\DAL.dll.config
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\BLL\bin\Debug\Entities.pdb
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\BLL\obj\Debug\BLL.csproj.CopyComplete
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\BLL\obj\Debug\BLL.dll
+G:\HK7\Xây Dựng Phần Mềm\QuanLyCD\BLL\obj\Debug\BLL.pdb
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\BLL\bin\Debug\BLL.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\BLL\bin\Debug\BLL.pdb
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\BLL\bin\Debug\DAL.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\BLL\bin\Debug\Entities.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\BLL\bin\Debug\DAL.pdb
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\BLL\bin\Debug\DAL.dll.config
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\BLL\bin\Debug\Entities.pdb
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.dll
+C:\Users\Quang\Desktop\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.pdb
+G:\New folder\XDPM_CD_PROJECT\BLL\bin\Debug\BLL.dll
+G:\New folder\XDPM_CD_PROJECT\BLL\bin\Debug\BLL.pdb
+G:\New folder\XDPM_CD_PROJECT\BLL\bin\Debug\DAL.dll
+G:\New folder\XDPM_CD_PROJECT\BLL\bin\Debug\Entities.dll
+G:\New folder\XDPM_CD_PROJECT\BLL\bin\Debug\DAL.pdb
+G:\New folder\XDPM_CD_PROJECT\BLL\bin\Debug\DAL.dll.config
+G:\New folder\XDPM_CD_PROJECT\BLL\bin\Debug\Entities.pdb
+G:\New folder\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+G:\New folder\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+G:\New folder\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.csproj.CopyComplete
+G:\New folder\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.dll
+G:\New folder\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.pdb
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\BLL\bin\Debug\BLL.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\BLL\bin\Debug\BLL.pdb
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\BLL\bin\Debug\DAL.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\BLL\bin\Debug\Entities.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\BLL\bin\Debug\DAL.pdb
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\BLL\bin\Debug\DAL.dll.config
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\BLL\bin\Debug\Entities.pdb
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.csproj.CopyComplete
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.dll
+G:\HK7\Xây Dựng Phần Mềm\XDPM_CD_PROJECT\BLL\obj\Debug\BLL.pdb
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\bin\Debug\BLL.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\bin\Debug\BLL.pdb
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\bin\Debug\DAL.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\bin\Debug\Entities.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\bin\Debug\DAL.pdb
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\bin\Debug\DAL.dll.config
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\bin\Debug\Entities.pdb
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\obj\Debug\BLL.dll
+C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\obj\Debug\BLL.pdb
