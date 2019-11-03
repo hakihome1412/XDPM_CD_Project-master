@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_QuanLyKhoDia));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.panelQuanLyTD = new System.Windows.Forms.Panel();
@@ -91,7 +89,6 @@
             this.groupControl1.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.groupControl1.Appearance.Options.UseBackColor = true;
             this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.groupControl1.Controls.Add(this.panelThemDia);
             this.groupControl1.Controls.Add(this.panelQuanLyTD);
             this.groupControl1.Location = new System.Drawing.Point(4, 5);
             this.groupControl1.LookAndFeel.SkinName = "Office 2010 Blue";
@@ -104,6 +101,7 @@
             // 
             // panelQuanLyTD
             // 
+            this.panelQuanLyTD.Controls.Add(this.panelThemDia);
             this.panelQuanLyTD.Controls.Add(this.tbDanhMuc);
             this.panelQuanLyTD.Controls.Add(this.label1);
             this.panelQuanLyTD.Controls.Add(this.tbTrangThai);
@@ -129,7 +127,7 @@
             this.panelThemDia.Controls.Add(this.tbThem_IdDia);
             this.panelThemDia.Controls.Add(this.label7);
             this.panelThemDia.Controls.Add(this.label9);
-            this.panelThemDia.Location = new System.Drawing.Point(6, 29);
+            this.panelThemDia.Location = new System.Drawing.Point(0, 0);
             this.panelThemDia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelThemDia.Name = "panelThemDia";
             this.panelThemDia.Size = new System.Drawing.Size(379, 186);
@@ -370,14 +368,6 @@
             this.dataGridViewD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdDia,
             this.TrangThaiThue});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewD.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewD.Location = new System.Drawing.Point(923, 93);
             this.dataGridViewD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewD.MultiSelect = false;
@@ -435,14 +425,6 @@
             this.tenTieuDe,
             this.TenDanhMuc,
             this.SoLuongDia});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTD.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewTD.Location = new System.Drawing.Point(401, 93);
             this.dataGridViewTD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewTD.MultiSelect = false;
@@ -531,8 +513,10 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form_QuanLyKhoDia";
             this.Text = "Quản Lý Kho Đĩa";
+            this.Activated += new System.EventHandler(this.Form_QuanLyKhoDia_Activated);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_QuanLyKhoDia_FormClosed);
             this.Load += new System.EventHandler(this.Form_QuanLyKhoDia_Load);
+            this.Shown += new System.EventHandler(this.Form_QuanLyKhoDia_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.panelQuanLyTD.ResumeLayout(false);

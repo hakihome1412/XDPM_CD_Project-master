@@ -14,6 +14,7 @@ namespace Entities
         public int IdPhieuDat { get; set; }
 
 
+
         public eChiTietPhieuDat(int idChiTietPhieuDat, int idTieuDe, int soLuong, int idPhieuDat)
         {
             IdChiTietPhieuDat = idChiTietPhieuDat;

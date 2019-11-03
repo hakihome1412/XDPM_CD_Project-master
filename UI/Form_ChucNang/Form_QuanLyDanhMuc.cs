@@ -25,37 +25,34 @@ namespace UI.Form_ChucNang
             InitializeComponent();
             dmbll = new DanhMucBLL();
             dataGridView1.AutoGenerateColumns = false;
+            formDN = new Form_QuanLy.Form_DangNhap();
         }
 
-        #region Hàm viết riêng
         public void LoadData()
         {
-            
+            dataGridView1.DataSource = null;
             dataGridView1.DataSource = dmbll.LayDanhSachDanhMuc();
         }
 
         private void LoadCell()
         {
-            tbIdDanhMuc.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim();
-            tbTenDanhMuc.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString().Trim();
-            tbPhiThue.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString().Trim();
-            tbPhiTreHan.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString().Trim();
-
-
+            eDanhMuc dm = dmbll.LayDanhMucTheoIDDanhMuc(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString()));
+            tbIdDanhMuc.Text = dm.IdDanhMuc.ToString();
+            tbTenDanhMuc.Text = dm.TenDanhMuc;
+            tbPhiThue.Text = dm.PhiThue.ToString();
+            tbPhiTreHan.Text = dm.PhiTreHan.ToString();
+            tbSoNgayThue.Text = dm.SoNgayThue.ToString();
         }
 
-        private void XoaPanel()
-        {
-            tbIdDanhMuc.Text = "";
-            tbTenDanhMuc.Text = "";
-       
-        }
-        #endregion
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             LoadCell();
-            btnSua.Enabled = true;
+            if(KEY == 1 || KEY == 2 || KEY == 3)
+                btn_SuaPhiThue.Enabled = btn_SuaPhiTreHan.Enabled = btn_SuaSoNgayThue.Enabled = false;
+            else
+                btn_SuaPhiThue.Enabled = btn_SuaPhiTreHan.Enabled = btn_SuaSoNgayThue.Enabled = true;
+
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -70,6 +67,7 @@ namespace UI.Form_ChucNang
         private void Form_QuanLyDanhMuc_Load(object sender, EventArgs e)
         {
             LoadData();
+            LoadCell();
         }
 
         private void Form_QuanLyDanhMuc_FormClosed(object sender, FormClosedEventArgs e)
@@ -77,193 +75,77 @@ namespace UI.Form_ChucNang
             Form_Main.f_QuanLyDanhMuc = true;
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            KEY = 1;
-            XoaPanel();
-            tbIdDanhMuc.Text = (dmbll.LayIdDanhMucCaoNhat() + 1).ToString();
-            btnThem.Enabled = false;
-            btnLuu.Enabled = true;
-            btnHuy.Enabled = true;
-            btnSua.Enabled = false;
-            //btnXoa.Enabled = false;
-            panelQuanLyDM.Enabled = true;
-            dataGridView1.Enabled = false;
-            tbTenDanhMuc.Enabled = true;
-        }
 
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            KEY = 2;
-            panelQuanLyDM.Enabled = true;
 
-            btnThem.Enabled = false;
-            //btnXoa.Enabled = false;
-            btnSua.Enabled = false;
-            btnLuu.Enabled = true;
-            btnHuy.Enabled = true;
-            dataGridView1.Enabled = false;
-        }
+
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if(KEY == 1)
-            {
-                #region Thêm
-                DialogResult dg = new DialogResult();
-                dg = XtraMessageBox.Show("Bạn có muốn thêm danh mục không !", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dg == DialogResult.Yes)
+           
+                if(KEY == 1)
                 {
-                    try
+                    if(dmbll.CapNhatPhiThue(Convert.ToInt32(tbIdDanhMuc.Text), Convert.ToDecimal(tbPhiThue.Text)))
                     {
-                        if (tbTenDanhMuc.Text == "")
-                        {
-                            XtraMessageBox.Show("Thiếu thông tin, vui lòng nhập đủ !");
-                        }
-                        else
-                        {
-                            string reTen = @"^[A-ZAÁÀẢÃẠÂẤẦẨẪẬĂẮẰẲẴẶEÉÈẺẼẸÊẾỀỂỄỆIÍÌỈĨỊOÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢUÚÙỦŨỤƯỨỪỬỮỰYÝỲỶỸỴ]+[a-zĐaáàảãạâấầẩẫậăắằẳẵặeéèẻẽẹêếềểễệiíìỉĩịoóòỏõọôốồổỗộơớờởỡợuúùủũụưứừửữựyýỳỷỹỵđ]+(\s+[A-ZAÁÀẢÃẠÂẤẦẨẪẬĂẮẰẲẴẶEÉÈẺẼẸÊẾỀỂỄỆIÍÌỈĨỊOÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢUÚÙỦŨỤƯỨỪỬỮỰYÝỲỶỸỴĐ]+[a-zaáàảãạâấầẩẫậăắằẳẵặeéèẻẽẹêếềểễệiíìỉĩịoóòỏõọôốồổỗộơớờởỡợuúùủũụưứừửữựyýỳỷỹỵđ]+)+$";
-                            Regex rgTen = new Regex(reTen);
-
-                            string reGiaTien = @"^[0-9]{3,4,5,6,7,8,9,10}$";
-                            Regex rgGiaTien = new Regex(reGiaTien);
-
-
-                            //if (rgGiaTien.IsMatch(tbTenDanhMuc.Text))
-                            //{
-                            //    XtraMessageBox.Show("Số điện thoại gồm 10 hoặc 11 chữ số, không có kí tự , vui lòng nhập lại !");
-                            //}
-                            if (!dmbll.kiemTraTrungDanhMuc(tbTenDanhMuc.Text))
-                            {
-                                XtraMessageBox.Show("Đã có một danh mục trùng tên trong hệ thống , vui lòng đặt tên khác!");
-                            }
-                            else
-                            {
-                              
-                                eDanhMuc edm = new eDanhMuc();
-                                edm.IdDanhMuc =Convert.ToInt32(tbIdDanhMuc.Text);
-                                edm.TenDanhMuc = tbTenDanhMuc.Text;
-                                edm.PhiThue = Convert.ToDecimal(tbPhiThue.Text);
-                                edm.PhiTreHan = Convert.ToDecimal(tbPhiTreHan.Text);
-                                edm.TrangThaiXoa = false;
-
-                                if (dmbll.ThemDanhMuc(edm))
-                                {
-                                    XtraMessageBox.Show("Thêm thành công !");
-                                    XoaPanel();
-                                    panelQuanLyDM.Enabled = false;
-                                    LoadData();
-                                    btnLuu.Enabled = false;
-                                    btnHuy.Enabled = false;
-                                    btnThem.Enabled = true;
-                                    dataGridView1.Enabled = true;
-                                    KEY = 0;
-
-                                }
-
-                            }
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-
-                        XtraMessageBox.Show("Lỗi: " + ex);
-                    }
-
+                        XtraMessageBox.Show("Cập nhật phí thuê mới thành công");
+                        LoadData();
+                        LoadCell();
+                    btnLuu.Enabled = false;
+                    btn_Huy.Enabled = false;
+                    tbPhiThue.Enabled = false;
+                    btn_SuaPhiThue.Enabled = btn_SuaPhiTreHan.Enabled = btn_SuaSoNgayThue.Enabled = true;
+                    KEY = 0;
                 }
+                    else
+                    {
+                    XtraMessageBox.Show("Cập nhật thất bại !");
+
+                    }
+                    
+
+                 }
                 else
                 {
-                    dg = DialogResult.Cancel;
-                }
-
-                #endregion
-            }
-            else if(KEY == 2)
-            {
-                #region Sửa
-                DialogResult dg = new DialogResult();
-                dg = XtraMessageBox.Show("Bạn có muốn sửa danh mục không !", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dg == DialogResult.Yes)
-                {
-                    try
+                    if(KEY == 2)
                     {
-                        if (tbTenDanhMuc.Text == "")
-                        {
-                            XtraMessageBox.Show("Thiếu thông tin, vui lòng nhập đủ !");
-                        }
-                        else
-                        {
-                            string reTen = @"^[A-ZAÁÀẢÃẠÂẤẦẨẪẬĂẮẰẲẴẶEÉÈẺẼẸÊẾỀỂỄỆIÍÌỈĨỊOÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢUÚÙỦŨỤƯỨỪỬỮỰYÝỲỶỸỴ]+[a-zĐaáàảãạâấầẩẫậăắằẳẵặeéèẻẽẹêếềểễệiíìỉĩịoóòỏõọôốồổỗộơớờởỡợuúùủũụưứừửữựyýỳỷỹỵđ]+(\s+[A-ZAÁÀẢÃẠÂẤẦẨẪẬĂẮẰẲẴẶEÉÈẺẼẸÊẾỀỂỄỆIÍÌỈĨỊOÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢUÚÙỦŨỤƯỨỪỬỮỰYÝỲỶỸỴĐ]+[a-zaáàảãạâấầẩẫậăắằẳẵặeéèẻẽẹêếềểễệiíìỉĩịoóòỏõọôốồổỗộơớờởỡợuúùủũụưứừửữựyýỳỷỹỵđ]+)+$";
-                            Regex rgTen = new Regex(reTen);
-
-                            string reGiaTien = @"^[0-9]{3,4,5,6,7,8,9,10}$";
-                            Regex rgGiaTien = new Regex(reGiaTien);
-
-
-                            //if (rgGiaTien.IsMatch(tbTenDanhMuc.Text))
-                            //{
-                            //    XtraMessageBox.Show("Số điện thoại gồm 10 hoặc 11 chữ số, không có kí tự , vui lòng nhập lại !");
-                            //}
-                            if (!dmbll.kiemTraTrungDanhMuc(tbTenDanhMuc.Text))
-                            {
-                                XtraMessageBox.Show("Đã có một danh mục trùng tên trong hệ thống , vui lòng đặt tên khác!");
-                            }
-                            else
-                            {
-
-                                eDanhMuc edm = new eDanhMuc();
-                                edm.IdDanhMuc = Convert.ToInt32(tbIdDanhMuc.Text);
-                                edm.TenDanhMuc = tbTenDanhMuc.Text;
-                                edm.PhiTreHan = Convert.ToDecimal(tbPhiTreHan.Text);
-                                edm.PhiThue = Convert.ToDecimal(tbPhiThue.Text);
-                                edm.TrangThaiXoa = false;
-
-                                if (dmbll.SuaDanhMuc(edm))
-                                {
-                                    XtraMessageBox.Show("Sửa thành công !");
-                                    XoaPanel();
-                                    panelQuanLyDM.Enabled = false;
-                                    LoadData();
-                                    btnLuu.Enabled = false;
-                                    btnHuy.Enabled = false;
-                                    btnThem.Enabled = true;
-                                    dataGridView1.Enabled = true;
-                                    KEY = 0;
-
-                                }
-
-                            }
-                        }
-                    }
-                    catch (Exception ex)
+                    if (dmbll.CapNhatPhiTreHan(Convert.ToInt32(tbIdDanhMuc.Text), Convert.ToDecimal(tbPhiTreHan.Text)))
                     {
-
-                        XtraMessageBox.Show("Lỗi: " + ex);
+                        XtraMessageBox.Show("Cập nhật phí trễ hạn mới thành công");
+                        LoadData();
+                        LoadCell();
+                        btnLuu.Enabled = false;
+                        btn_Huy.Enabled = false;
+                        tbPhiTreHan.Enabled = false;
+                        btn_SuaPhiThue.Enabled = btn_SuaPhiTreHan.Enabled = btn_SuaSoNgayThue.Enabled = true;
+                        KEY = 0;
                     }
-
+                    else
+                    {
+                        XtraMessageBox.Show("Cập nhật thất bại !");
+                    }
                 }
-                else
-                {
-                    dg = DialogResult.Cancel;
+                    else
+                    {
+                    if (dmbll.CapNhatSoNgayThue(Convert.ToInt32(tbIdDanhMuc.Text), Convert.ToInt32(tbSoNgayThue.Text)))
+                    {
+                        XtraMessageBox.Show("Cập nhật số ngày thuê mới thành công");
+                        LoadData();
+                        LoadCell();
+                        btnLuu.Enabled = false;
+                        btn_Huy.Enabled = false;
+                        tbSoNgayThue.Enabled = false;
+                        btn_SuaPhiThue.Enabled = btn_SuaPhiTreHan.Enabled = btn_SuaSoNgayThue.Enabled = true;
+                        KEY = 0;
+                    }
+                    else
+                    {
+                        XtraMessageBox.Show("Cập nhật thất bại !");
+                    }
                 }
-
-                #endregion
-            }
+                }
+            
         }
 
-        private void btnHuy_Click(object sender, EventArgs e)
-        {
-            KEY = 0;
-            XoaPanel();
-            panelQuanLyDM.Enabled = false;
-            btnSua.Enabled = false;
-            //btnXoa.Enabled = false;
-            btnLuu.Enabled = false;
-            btnHuy.Enabled = false;
-            btnThem.Enabled = true;
-            dataGridView1.Enabled = true;
-            tbTenDanhMuc.Enabled = false;
-        }
+
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -283,6 +165,84 @@ namespace UI.Form_ChucNang
         private void tbTimKiemNV_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void tbSoNgayThue_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private Form_QuanLy.Form_DangNhap formDN;
+
+        private void btn_SuaPhiThue_Click(object sender, EventArgs e)
+        {
+
+            if (Form_Main.trangThaiLogin != true)
+            {
+                XtraMessageBox.Show("Vui lòng đăng nhập tài khoản quản lý để thực hiện chức năng này !");
+                formDN = new Form_QuanLy.Form_DangNhap();
+                formDN.ShowDialog();
+
+            }
+            else
+            {
+                KEY = 1;
+                btnLuu.Enabled = btn_Huy.Enabled = true;
+                btn_SuaPhiTreHan.Enabled = btn_SuaSoNgayThue.Enabled = btn_SuaPhiThue.Enabled = false;
+                tbPhiThue.Enabled = true;
+                tbPhiThue.Focus();
+            }
+            
+        }
+
+        private void btn_Huy_Click(object sender, EventArgs e)
+        {
+            KEY = 0;
+            tbPhiThue.Enabled = tbPhiTreHan.Enabled = tbSoNgayThue.Enabled = false;
+            btn_SuaPhiThue.Enabled = btn_SuaPhiTreHan.Enabled = btn_SuaSoNgayThue.Enabled = true;
+            btn_Huy.Enabled = btnLuu.Enabled =  false;
+            LoadData();
+            LoadCell();
+
+
+        }
+
+        private void btn_SuaPhiTreHan_Click(object sender, EventArgs e)
+        {
+            if (Form_Main.trangThaiLogin != true)
+            {
+                XtraMessageBox.Show("Vui lòng đăng nhập tài khoản quản lý để thực hiện chức năng này !");
+                formDN = new Form_QuanLy.Form_DangNhap();
+                formDN.ShowDialog();
+
+            }
+            else
+            {
+                KEY = 2;
+                btnLuu.Enabled = btn_Huy.Enabled = true;
+                btn_SuaPhiThue.Enabled = btn_SuaSoNgayThue.Enabled = btn_SuaPhiTreHan.Enabled = false;
+                tbPhiTreHan.Enabled = true;
+                tbPhiTreHan.Focus();
+            }
+        }
+
+        private void btn_SuaSoNgayThue_Click(object sender, EventArgs e)
+        {
+            if (Form_Main.trangThaiLogin != true)
+            {
+                XtraMessageBox.Show("Vui lòng đăng nhập tài khoản quản lý để thực hiện chức năng này !");
+                formDN = new Form_QuanLy.Form_DangNhap();
+                formDN.ShowDialog();
+
+            }
+            else
+            {
+                KEY = 3;
+                btnLuu.Enabled = btn_Huy.Enabled = true;
+                btn_SuaPhiThue.Enabled = btn_SuaPhiTreHan.Enabled = btn_SuaSoNgayThue.Enabled = false;
+                tbSoNgayThue.Enabled = true;
+                tbSoNgayThue.Focus();
+            }
         }
     }
 }

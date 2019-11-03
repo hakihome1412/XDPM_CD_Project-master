@@ -41,6 +41,7 @@ namespace UI.Form_ChucNang
 
         public void HienThiThongTinKH()
         {
+            tbIDKhachHang.Text = ekh.IdKhachHang;
             tbTenKhachHang.Text = ekh.HoTen;
             tbDiaChi.Text = ekh.DiaChi;
             tbSDT.Text = ekh.SoDienThoai;
@@ -77,7 +78,6 @@ namespace UI.Form_ChucNang
             tbTenKhachHang.Text = "";
             tbDiaChi.Text = "";
             tbSDT.Text = "";
-            tbTongPhiTreHan.Text = "";
 
             tbNgaythue.Text = "";
             tbHanChotTraDia.Text = "";
@@ -116,32 +116,29 @@ namespace UI.Form_ChucNang
                 ekh = khbll.LayThongTinKhachHangBangIdDia(tbIdDia.Text);
                 ed = diabll.LayThongTinDiaBangIdDia(tbIdDia.Text);
                 ettpt = ctptbll.LayThongTinPhieuThue(tbIdDia.Text, ekh.IdKhachHang);
-
-                ctptbll.CapNhatKhoanNoCuaKhachHang(ekh.IdKhachHang);
                 HienThiThongTinKH();
-                tbTongPhiTreHan.Text = ctptbll.LayKhoanNoCuaKhachHang(ekh.IdKhachHang).ToString();
+
 
                 HienThiThongTinDia();
 
                 HienThiThongTinThueDia();
 
-                btnXNTD_BT.Enabled = true;
-                btnHuy.Enabled = true;
-
-
-                if (Convert.ToDecimal(tbPhiTreHan.Text) == 0)
+                if (ettpt.SoNgayTreHan <= 0)
                 {
                     btnXNTD_BT.Enabled = true;
                     btnXNTD_TraPhi.Enabled = false;
                     btnXNTD_ChuaTraPhi.Enabled = false;
                     btnHuy.Enabled = true;
                 }
-                else if (Convert.ToDecimal(tbPhiTreHan.Text) > 0)
+                else
                 {
-                    btnXNTD_BT.Enabled = false;
-                    btnXNTD_TraPhi.Enabled = true;
-                    btnXNTD_ChuaTraPhi.Enabled = true;
-                    btnHuy.Enabled = true;
+                    if(ettpt.SoNgayTreHan > 0)
+                    {
+                        btnXNTD_TraPhi.Enabled = true;
+                        btnXNTD_ChuaTraPhi.Enabled = true;
+                        btnXNTD_BT.Enabled = false;
+                        btnHuy.Enabled = true;
+                    }
                 }
 
             }
@@ -164,12 +161,14 @@ namespace UI.Form_ChucNang
                         ectpt.NgayTraDiaThucTe = DateTime.Now;
                         ectpt.TrangThaiNoPhiTre = false;
                         ectpt.TrangThaiTraPhiTre = false;                       
-                        
-                        
-
+                                               
                         if (ctptbll.XacNhanTraDia(ectpt) && diabll.SuaTrangThaiThueDia(ed.IdDia))
                         {
-                            XtraMessageBox.Show("Trả đĩa thành công !");                          
+                            XtraMessageBox.Show("Trả đĩa thành công !");
+                        btnXNTD_BT.Enabled = false;
+                        clearALLtexbox();
+                        btnHuy.Enabled = false;
+                        tbIdDia.Focus();
                         }                    
                 }
                 catch (Exception ex)
@@ -184,6 +183,25 @@ namespace UI.Form_ChucNang
                 dg = DialogResult.Cancel;
             }
             #endregion
+        }
+
+        private void clearALLtexbox()
+        {
+            tbIdDia.Text = "";
+            tbTTDanhMuc.Text = "";
+            tbTTIdDia.Text = "";
+            tbTTPhiThueDia.Text = "";
+            tbTTPhiTreHan.Text = "";
+            tbTTTenDia.Text = "";
+            tbIDKhachHang.Text = "";
+            tbTenKhachHang.Text = "";
+            tbDiaChi.Text = "";
+            tbSDT.Text = "";
+            tbNgaythue.Text = "";
+            tbHanChotTraDia.Text = "";
+            tbSoNgayThue.Text = "";
+            tbSoNgayTreHan.Text = "";
+            tbPhiTreHan.Text = "";
         }
 
         private void btnXNTD_TraPhi_Click(object sender, EventArgs e)
@@ -205,6 +223,11 @@ namespace UI.Form_ChucNang
                     if (ctptbll.XacNhanTraDia(ectpt) && diabll.SuaTrangThaiThueDia(ed.IdDia))
                     {
                         XtraMessageBox.Show("Trả đĩa thành công !");
+                        btnXNTD_TraPhi.Enabled = false;
+                        btnXNTD_ChuaTraPhi.Enabled = false;
+                        clearALLtexbox();
+                        btnHuy.Enabled = false;
+                        tbIdDia.Focus();
                     }
                 }
                 catch (Exception ex)
@@ -240,6 +263,11 @@ namespace UI.Form_ChucNang
                     if (ctptbll.XacNhanTraDia(ectpt) && diabll.SuaTrangThaiThueDia(ed.IdDia))
                     {
                         XtraMessageBox.Show("Trả đĩa thành công !");
+                        btnXNTD_TraPhi.Enabled = false;
+                        btnXNTD_ChuaTraPhi.Enabled = false;
+                        clearALLtexbox();
+                        btnHuy.Enabled = false;
+                        tbIdDia.Focus();
                     }
                 }
                 catch (Exception ex)

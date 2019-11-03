@@ -73,9 +73,7 @@ namespace UI.Form_ChucNang
         {
 
             tbIdDia.Text = "";
-            tbSoNgayThue.Text = "";
             tbIdDia.Enabled = false;
-            tbSoNgayThue.Enabled = false;
             btnThemDia.Enabled = false;
         }
 
@@ -91,7 +89,8 @@ namespace UI.Form_ChucNang
 
         private void Form_QuanLyThueDia_Load(object sender, EventArgs e)
         {
-
+            formQLPT = new Form_ChucNang.Form_QuanLyPhiTre();
+            formM = new Form_Main();
         }
 
 
@@ -117,6 +116,9 @@ namespace UI.Form_ChucNang
             Form_Main.f_QuanLyThueDia = true;
         }
 
+        private Form_ChucNang.Form_QuanLyPhiTre formQLPT;
+        private Form_Main formM;
+
         private void btnXacNhanKH_Click(object sender, EventArgs e)
         {
            
@@ -132,50 +134,31 @@ namespace UI.Form_ChucNang
                 {
                     XtraMessageBox.Show("ID Khách hàng không có trong hệ thống !");
                 }
-                //kiểm tra khoản nợ của khách hàng trong hệ thống
-                else if (ctptbll.CapNhatKhoanNoCuaKhachHang(tbIdKH.Text) == true)
-                {
-
-                    DialogResult dg = new DialogResult();
-                    dg = XtraMessageBox.Show("Khách hàng " + khbll.LayTenKhachHangBangId(tbIdKH.Text) + " còn thiếu " + ctptbll.LayKhoanNoCuaKhachHang(tbIdKH.Text) + " $ phí trễ hạn, bạn có muốn cho khách hàng này thuê tiếp hay không !", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (dg == DialogResult.Yes)
-                    {
-                        dg = DialogResult.Cancel;
-                        tbTenKhachHang.Text = ekh.HoTen;
-                        tbDiaChi.Text = ekh.DiaChi;
-                        tbSDT.Text = ekh.SoDienThoai;
-                        tbTienNo.Text = ctptbll.LayKhoanNoCuaKhachHang(tbIdKH.Text).ToString();
-                        btnXacNhanKH.Text = "Hủy";
-
-                        tbIdDia.Enabled = true;
-                        btnThemDia.Enabled = true;
-                        tbIdKH.Enabled = false;
-                        tbSoNgayThue.Enabled = true;
-
-                    }
-                    else
-                    {
-                        tbIdDia.Text = "";
-                        dg = DialogResult.Cancel;
-
-
-                    }
-
-                }
-                else if (ekh != null)
+                else
                 {
 
                     tbTenKhachHang.Text = ekh.HoTen;
                     tbDiaChi.Text = ekh.DiaChi;
                     tbSDT.Text = ekh.SoDienThoai;
-                    tbTienNo.Text = "0";
                     btnXacNhanKH.Text = "Hủy";
 
                     tbIdDia.Enabled = true;
                     btnThemDia.Enabled = true;
                     tbIdKH.Enabled = false;
-                    tbSoNgayThue.Enabled = true;
 
+                    if(khbll.TongPhiTreKhachHang(tbIdKH.Text) > 0)
+                    {
+                        DialogResult dg = new DialogResult();
+                        dg = XtraMessageBox.Show("Bạn đang nợ Phí Trễ : " + khbll.TongPhiTreKhachHang(tbIdKH.Text).ToString() + " . Bạn có muốn thanh toán ?", "Thông báo Phí Trễ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (dg == DialogResult.Yes)
+                        {
+                                formQLPT.ShowDialog();
+                        }
+                        else
+                        {
+                            dg = DialogResult.Cancel;
+                        }
+                    }
                 }
             }
             else if (btnXacNhanKH.Text == "Hủy")
@@ -188,11 +171,9 @@ namespace UI.Form_ChucNang
                     XoaThongTinKH();
                     btnXacNhanKH.Text = "Xác Nhận";
                     tbIdDia.Text = "";
-                    tbSoNgayThue.Text = "";
                     tbIdDia.Enabled = false;
                     btnThemDia.Enabled = false;
                     tbIdKH.Enabled = true;
-                    tbSoNgayThue.Enabled = false;
 
                     XoaThongTinChiTietDia();
 
@@ -218,54 +199,28 @@ namespace UI.Form_ChucNang
 
         private void btnThemDia_Click(object sender, EventArgs e)
         {
-            if (tbIdDia.Text == "" || tbSoNgayThue.Text == "")
+            if (!diabll.kiemtraIDDiaCoTonTai(tbIdDia.Text))
             {
-                XtraMessageBox.Show("Vui lòng nhập đầy đủ ID đĩa và số ngày thuê !");
-            }
-            else if (tdbll.LayTenTieuDeBangIdDia(tbIdDia.Text) == "null")
-            {
-                XtraMessageBox.Show("Không có Đĩa này trong hệ thống, vui lòng nhập ID khác !");
-            }
-            else if (diabll.kiemTraDiaTaiCuaHang(tbIdDia.Text))
-            {
-                XtraMessageBox.Show("Đĩa đang được thuê bởi người khác, vui lòng nhập ID khác !");
+                XtraMessageBox.Show("Dữ liệu nhập không hợp lệ hoặc Không tồn tại ID Đĩa này trong hệ thống !");
             }
             else
             {
-                //Tạo đối tượng add vào list rồi đẩy ra datagridview
-
-                DateTime ngayTraDia = DateTime.Now.AddDays(Convert.ToInt32(tbSoNgayThue.Text));
-
-                string tenDia = tdbll.LayTenTieuDeBangIdDia(tbIdDia.Text);
-                string tenDanhMuc = dmbll.LayTenDanhMucBangIdDia(tbIdDia.Text);
-
-                decimal phiThue = dmbll.LayPhiThueBangIdDia(tbIdDia.Text);
-                decimal phiTreHan = dmbll.LayPhiTreHanBangIdDia(tbIdDia.Text);
-                eThongTinPhieuThue ettpt = new eThongTinPhieuThue(tbIdDia.Text, tenDia, tenDanhMuc, Convert.ToDecimal(phiThue) * Convert.ToDecimal(tbSoNgayThue.Text), Convert.ToDecimal(phiTreHan), Convert.ToInt32(tbSoNgayThue.Text), ngayTraDia, _IDPhieuThue);
-
-                //kiểm tra list có rỗng ko
-                if (listTtPhieuThue.Count() == 0)
+                if(!diabll.kiemTraTinhTrangDiaCoSan(tbIdDia.Text))
                 {
-                    listTtPhieuThue.Add(ettpt);
-                    var bindingList = new BindingList<eThongTinPhieuThue>(listTtPhieuThue);
-                    var source = new BindingSource(bindingList, null);
-                    dataGridView1.DataSource = source;
-                    thayDoiThongTinPhieuThue(listTtPhieuThue);
-
-                    btnXoaKhoiPhieuThue.Enabled = true;
-                    btnXacNhanThue.Enabled = true;
+                    XtraMessageBox.Show("Đĩa này không Có Sẵn tại cửa hàng !");
                 }
-                else if (listTtPhieuThue != null)
+                else
                 {
-                    int temp = 0;
-                    foreach (eThongTinPhieuThue item in listTtPhieuThue)
-                    {
-                        if (item.IdDia == tbIdDia.Text)
-                        {
-                            temp = temp + 1;
-                        }
-                    }
-                    if (temp == 0)
+                    //Tạo đối tượng add vào list rồi đẩy ra datagridview
+                    DateTime ngayTraDiaDuKien = DateTime.Now.AddDays(dmbll.LaySoNgayThueTheoIDDia(tbIdDia.Text));
+                    string tenDia = tdbll.LayTenTieuDeBangIdDia(tbIdDia.Text);
+                    string tenDanhMuc = dmbll.LayTenDanhMucBangIdDia(tbIdDia.Text);
+                    decimal phiThue = dmbll.LayPhiThueBangIdDia(tbIdDia.Text);
+                    decimal phiTreHan = dmbll.LayPhiTreHanBangIdDia(tbIdDia.Text);
+                    eThongTinPhieuThue ettpt = new eThongTinPhieuThue(tbIdDia.Text, tenDia, tenDanhMuc, Convert.ToDecimal(phiThue), Convert.ToDecimal(phiTreHan), dmbll.LaySoNgayThueTheoIDDia(tbIdDia.Text), ngayTraDiaDuKien, _IDPhieuThue);
+
+                    //kiểm tra list có rỗng ko
+                    if (listTtPhieuThue.Count() == 0)
                     {
                         listTtPhieuThue.Add(ettpt);
                         var bindingList = new BindingList<eThongTinPhieuThue>(listTtPhieuThue);
@@ -275,14 +230,41 @@ namespace UI.Form_ChucNang
 
                         btnXoaKhoiPhieuThue.Enabled = true;
                         btnXacNhanThue.Enabled = true;
+                        LoadCell();
+                        tbIdDia.Focus();
                     }
-                    else if (temp > 0)
+                    else if (listTtPhieuThue != null)
                     {
-                        XtraMessageBox.Show("Đĩa này đã có trong phiếu thuê, vui lòng không nhập lại !");
+                        int temp = 0;
+                        foreach (eThongTinPhieuThue item in listTtPhieuThue)
+                        {
+                            if (item.IdDia == tbIdDia.Text)
+                            {
+                                temp = temp + 1;
+                            }
+                        }
+                        if (temp == 0)
+                        {
+                            listTtPhieuThue.Add(ettpt);
+                            var bindingList = new BindingList<eThongTinPhieuThue>(listTtPhieuThue);
+                            var source = new BindingSource(bindingList, null);
+                            dataGridView1.DataSource = source;
+                            thayDoiThongTinPhieuThue(listTtPhieuThue);
+
+                            btnXoaKhoiPhieuThue.Enabled = true;
+                            btnXacNhanThue.Enabled = true;
+                            LoadCell();
+                            tbIdDia.Focus();
+                        }
+                        else if (temp > 0)
+                        {
+                            XtraMessageBox.Show(" ID Đĩa này đã có trong phiếu thuê, vui lòng nhập Đĩa khác !");
+                        }
                     }
-                }
+                }   
             }
         }
+
         public void thayDoiThongTinPhieuThue(List<eThongTinPhieuThue> listTTPT)
         {
             decimal tongPhiThue = 0;
@@ -299,6 +281,7 @@ namespace UI.Form_ChucNang
 
         private void btnXoaKhoiPhieuThue_Click(object sender, EventArgs e)
         {
+            int count = 0;
             DialogResult dg = new DialogResult();
             dg = XtraMessageBox.Show("Bạn có muốn bỏ đĩa này ra khỏi phiếu thuê hay không !", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dg == DialogResult.Yes)
@@ -312,10 +295,20 @@ namespace UI.Form_ChucNang
                         var source = new BindingSource(bindingList, null);
                         dataGridView1.DataSource = source;
                         thayDoiThongTinPhieuThue(listTtPhieuThue);
+                        count = source.Count;
                         break;
                     }
                 }
-
+                if (count == 0)
+                {
+                    tbTTIdDia.Text = "";
+                    tbTTNgayTraDia.Text = "";
+                    tbTTSoNgayThue.Text = "";
+                    tbTTTenDia.Text = "";
+                    btnXacNhanThue.Enabled = false;
+                }
+                else
+                    LoadCell();
             }
             else
             {
@@ -338,7 +331,7 @@ namespace UI.Form_ChucNang
         private void btnXacNhanThue_Click(object sender, EventArgs e)
         {
             DialogResult dg = new DialogResult();
-            dg = XtraMessageBox.Show("Chỉ xác nhận sau khi khách hàng đã nhận đủ đĩa và thanh toán, nếu đã ok, vui lòng xác nhận !", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            dg = XtraMessageBox.Show("Chỉ xác nhận sau khi khách hàng đã nhận đủ đĩa và thanh toán, vui lòng xác nhận !", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dg == DialogResult.Yes)
             {
                 _IDPhieuThue = ptbll.LayIdPhieuThueLonNhat() + 1;
@@ -355,11 +348,13 @@ namespace UI.Form_ChucNang
                         if (ctptbll.ThemChiTietPhieuThue(listTtPhieuThue, _IDPhieuThue))
                         {
                             XtraMessageBox.Show("Đã lưu thông tin phiếu thuê vào hệ thống !");
-                            _IDPhieuThue = 0;
-
                             btnXacNhanKH.Text = "Xác Nhận";
                             tbIdKH.Enabled = true;
                             tbIdKH.Text = "";
+
+                            tbTenKhachHang.Text = "";
+                            tbDiaChi.Text = "";
+                            tbSDT.Text = "";
 
                             btnXoaKhoiPhieuThue.Enabled = false;
                             btnXacNhanThue.Enabled = false;

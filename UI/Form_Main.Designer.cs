@@ -58,6 +58,7 @@
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.btn_DangXuat = new DevExpress.XtraBars.BarButtonItem();
             this.skinRibbonGalleryBarItem2 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.btn_TraDia = new DevExpress.XtraBars.BarButtonItem();
             this.rbPage_QuanLy = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbPage_ChucNang = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -67,12 +68,9 @@
             this.rbPage_BaoCao = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
             this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
-            this.btn_TraDia = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
@@ -112,15 +110,15 @@
             this.skinRibbonGalleryBarItem2,
             this.btn_TraDia});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbonControl1.MaxItemId = 60;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rbPage_QuanLy,
             this.rbPage_ChucNang,
-            this.rbPage_BaoCao,
-            this.ribbonPage1});
+            this.rbPage_BaoCao});
             this.ribbonControl1.QuickToolbarItemLinks.Add(this.skinRibbonGalleryBarItem2);
-            this.ribbonControl1.Size = new System.Drawing.Size(1366, 179);
+            this.ribbonControl1.Size = new System.Drawing.Size(1171, 142);
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Above;
             // 
             // btn_ThongTinCaNhan
@@ -369,6 +367,14 @@
             this.skinRibbonGalleryBarItem2.Id = 58;
             this.skinRibbonGalleryBarItem2.Name = "skinRibbonGalleryBarItem2";
             // 
+            // btn_TraDia
+            // 
+            this.btn_TraDia.Caption = "Trả Đĩa";
+            this.btn_TraDia.Id = 59;
+            this.btn_TraDia.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_TraDia.ImageOptions.LargeImage")));
+            this.btn_TraDia.Name = "btn_TraDia";
+            this.btn_TraDia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TraDia_ItemClick);
+            // 
             // rbPage_QuanLy
             // 
             this.rbPage_QuanLy.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -437,19 +443,6 @@
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             this.ribbonPageGroup6.Text = "Khách Hàng";
             // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup4});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Giao Diện";
-            // 
-            // ribbonPageGroup4
-            // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.skinRibbonGalleryBarItem1);
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "Giao Diện";
-            // 
             // documentManager1
             // 
             this.documentManager1.MdiParent = this;
@@ -465,22 +458,15 @@
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Blue";
             // 
-            // btn_TraDia
-            // 
-            this.btn_TraDia.Caption = "Trả Đĩa";
-            this.btn_TraDia.Id = 59;
-            this.btn_TraDia.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.btn_TraDia.Name = "btn_TraDia";
-            this.btn_TraDia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TraDia_ItemClick);
-            // 
             // Form_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1366, 781);
+            this.ClientSize = new System.Drawing.Size(1171, 635);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chương Trình Quản Lý CD";
@@ -532,8 +518,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage rbPage_BaoCao;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.Docking2010.DocumentManager documentManager1;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView tabbedView1;

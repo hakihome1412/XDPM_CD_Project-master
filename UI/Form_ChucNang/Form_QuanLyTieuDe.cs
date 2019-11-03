@@ -37,13 +37,13 @@ namespace UI.Form_ChucNang
 
         private void LoadCell()
         {
-            tbIdTieuDe.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim();
-            tbTenTieuDe.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString().Trim();          
-            tbSoLuongDia.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString().Trim();
+            eTieuDe td = tdbll.LayTieuDeTheoIDTieuDe(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            tbIdTieuDe.Text = td.IdTieuDe;
+            tbTenTieuDe.Text = td.TenTieuDe;
+            tbSoLuongDia.Text = td.SoLuongDia.ToString();
+            cbbDanhMuc.SelectedValue = cbbPhanLoaiDanhMuc.SelectedValue.ToString();
+            tbSoLuongDiaCoSan.Text = td.SoLuongDiaCoSan.ToString();
             //tbPhiThue.Text = String.Format(dataGridView1.CurrentRow.Cells[4].Value.ToString().Trim(), "###,##");
-         
-
-
         }
 
         private string NextID(string maTuTang, string prefixID)
@@ -74,7 +74,8 @@ namespace UI.Form_ChucNang
         {
             tbIdTieuDe.Text = "";
             tbTenTieuDe.Text = "";
-            tbSoLuongDia.Text = "";
+            tbSoLuongDia.Text = "0";
+            tbSoLuongDiaCoSan.Text = "0";
             //tbPhiThue.Text = "";            
         }
         #endregion
@@ -98,12 +99,12 @@ namespace UI.Form_ChucNang
             cbbPhanLoaiDanhMuc.DataSource = binding2.DataSource;
             cbbPhanLoaiDanhMuc.DisplayMember = "TenDanhMuc";
             cbbPhanLoaiDanhMuc.ValueMember = "TenDanhMuc";
+            LoadCell();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             LoadCell();
-            btnSua.Enabled = true;
             btnXoa.Enabled = true;
         }
 
@@ -116,17 +117,25 @@ namespace UI.Form_ChucNang
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            KEY = 1;
-            XoaPanel();
-            tbIdTieuDe.Text = NextID(tdbll.LayMaTieuDeCaoNhat(), "TD");
+            if (Form_Main.trangThaiLogin != true)
+            {
+                XtraMessageBox.Show("Vui lòng đăng nhập tài khoản quản lý để thực hiện chức năng này !");
+                formDN = new Form_QuanLy.Form_DangNhap();
+                formDN.ShowDialog();
+            }
+            else if (Form_Main.trangThaiLogin == true)
+            {
+                KEY = 1;
+                XoaPanel();
+                tbIdTieuDe.Text = NextID(tdbll.LayMaTieuDeCaoNhat(), "TD");
 
-            btnThem.Enabled = false;
-            btnLuu.Enabled = true;
-            btnHuy.Enabled = true;
-            btnSua.Enabled = false;
-            btnXoa.Enabled = false;
-            panelQuanLyTD.Enabled = true;
-            dataGridView1.Enabled = false;
+                btnThem.Enabled = false;
+                btnLuu.Enabled = true;
+                btnHuy.Enabled = true;
+                btnXoa.Enabled = false;
+                panelQuanLyTD.Enabled = true;
+                dataGridView1.Enabled = false;
+            }
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -136,7 +145,6 @@ namespace UI.Form_ChucNang
 
             btnThem.Enabled = false;
             btnXoa.Enabled = false;
-            btnSua.Enabled = false;
             btnLuu.Enabled = true;
             btnHuy.Enabled = true;
             cbbPhanLoaiDanhMuc.Enabled = false;
@@ -168,9 +176,26 @@ namespace UI.Form_ChucNang
 
                           
                             
-                            if (!tdbll.kiemTraTrungTieuDe(tbTenTieuDe.Text))
+                            if (tdbll.kiemtraTieuDeDaTonTai(tbTenTieuDe.Text))
                             {
-                                XtraMessageBox.Show("Đã có một tiêu đề trùng tên trong hệ thống , vui lòng đặt tên khác!");
+                                if(tdbll.capnhatTrangThaiXoa(tbTenTieuDe.Text,false))
+                                {
+                                    XtraMessageBox.Show("Thêm thành công");
+                                    XoaPanel();
+                                    panelQuanLyTD.Enabled = false;
+                                    LoadData();
+                                    btnLuu.Enabled = false;
+                                    btnHuy.Enabled = false;
+                                    btnThem.Enabled = true;
+                                    btnXoa.Enabled = true;
+                                    dataGridView1.Enabled = true;
+                                    KEY = 0;
+                                    LoadCell();
+                                }
+                                else
+                                {
+                                    XtraMessageBox.Show("Thêm thất bại !");
+                                }
                             }
                             else
                             {
@@ -180,20 +205,23 @@ namespace UI.Form_ChucNang
                                 td.TenTieuDe = tbTenTieuDe.Text;
                                 td.SoLuongDia = 0;
                                 td.IdDanhMuc = idDM;
+                                td.SoLuongDiaCoSan = 0;
                                 //td.PhiThue = Convert.ToDecimal(tbPhiThue.Text);
                                 td.TrangThaiXoa = false;
 
                                 if (tdbll.ThemTieuDe(td))
                                 {
-                                    XtraMessageBox.Show("Thêm thành công !");
+                                    XtraMessageBox.Show("Thêm thành công");
                                     XoaPanel();
                                     panelQuanLyTD.Enabled = false;
                                     LoadData();
                                     btnLuu.Enabled = false;
                                     btnHuy.Enabled = false;
                                     btnThem.Enabled = true;
+                                    btnXoa.Enabled = true;
                                     dataGridView1.Enabled = true;
                                     KEY = 0;
+                                    LoadCell();
 
                                 }
 
@@ -214,83 +242,32 @@ namespace UI.Form_ChucNang
 
                 #endregion
             }
-            else if (KEY == 2)
-            {
-
-                #region Sửa
-                DialogResult dg = new DialogResult();
-                dg = XtraMessageBox.Show("Bạn có muốn thêm nhân viên không !", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dg == DialogResult.Yes)
-                {
-                    try
-                    {
-
-                        if (tbTenTieuDe.Text == "" /*|| tbPhiThue.Text == ""*/)
-                        {
-                            XtraMessageBox.Show("Thiếu thông tin, vui lòng nhập đủ !");
-                        }
-                        else
-                        {
-                           
-                                int idDM = dmbll.layIdDanhMuc(cbbDanhMuc.Text);
-                                eTieuDe td = new eTieuDe();
-                                td.IdTieuDe = tbIdTieuDe.Text;
-                                td.TenTieuDe = tbTenTieuDe.Text;
-                                td.SoLuongDia = 0;
-                                td.IdDanhMuc = idDM;                             
-                                td.TrangThaiXoa = false;
-
-                                if (tdbll.SuaTieuDe(td))
-                                {
-                                    XtraMessageBox.Show("Sửa thành công !");
-                                    XoaPanel();
-                                    panelQuanLyTD.Enabled = false;
-                                    LoadData();
-                                    btnLuu.Enabled = false;
-                                    btnHuy.Enabled = false;
-                                    btnThem.Enabled = true;
-                                    dataGridView1.Enabled = true;
-                                    KEY = 0;
-
-                                }
-
-                            
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-
-                        XtraMessageBox.Show("Lỗi: " + ex);
-                    }
-
-                }
-                else
-                {
-                    dg = DialogResult.Cancel;
-                }
-                #endregion
-            }
         }
+
+
         private void btnHuy_Click(object sender, EventArgs e)
         {
             KEY = 0;
             XoaPanel();
             panelQuanLyTD.Enabled = false;
-            btnSua.Enabled = false;
-            btnXoa.Enabled = false;
+            btnXoa.Enabled = true;
             btnLuu.Enabled = false;
             btnHuy.Enabled = false;
             btnThem.Enabled = true;
             cbbPhanLoaiDanhMuc.Enabled = true;
             dataGridView1.Enabled = true;
+            LoadCell();
         }
 
+        private Form_QuanLy.Form_DangNhap formDN;
         private void btnXoa_Click(object sender, EventArgs e)
         {
             #region Xóa
             if (Form_Main.trangThaiLogin != true)
             {
                 XtraMessageBox.Show("Vui lòng đăng nhập tài khoản quản lý để thực hiện chức năng này !");
+                formDN = new Form_QuanLy.Form_DangNhap();
+                formDN.ShowDialog();
             }
             else if (Form_Main.trangThaiLogin == true)
             {
@@ -304,18 +281,26 @@ namespace UI.Form_ChucNang
                         kh.IdTieuDe = tbIdTieuDe.Text;
                         kh.TrangThaiXoa = true;
 
-                        if (tdbll.XoaTieuDe(kh))
+                        if (tdbll.kiemtraSoLuongDiaConLai(tbIdTieuDe.Text))
                         {
-                            XtraMessageBox.Show("Xóa thành công !");
-                            XoaPanel();
-                            panelQuanLyTD.Enabled = false;
-                            btnLuu.Enabled = false;
-                            btnHuy.Enabled = false;
-                            btnThem.Enabled = true;
-                            KEY = 0;
-                            LoadData();
-                            dataGridView1.Update();
-                            dataGridView1.Refresh();
+                            XtraMessageBox.Show("Xóa không thành công vì còn tồn tại Đĩa với tiêu đề này !");
+                        }
+                        else
+                        {
+                            if (tdbll.XoaTieuDe(kh))
+                            {
+                                XtraMessageBox.Show("Xóa thành công !");
+                                XoaPanel();
+                                panelQuanLyTD.Enabled = false;
+                                btnLuu.Enabled = false;
+                                btnHuy.Enabled = false;
+                                btnThem.Enabled = true;
+                                KEY = 0;
+                                LoadData();
+                                dataGridView1.Update();
+                                dataGridView1.Refresh();
+                                LoadCell();
+                            }
                         }
                     }
                     catch (Exception ex)

@@ -27,7 +27,7 @@ namespace Entities
         public int SoNgayTreHan { get; set; }
         public int IdChiTietPhieuThue { get; set; }
 
-        public eThongTinPhieuThue(string idDia, string tenDia, string danhMuc, decimal phiThue, decimal phiTreHan,int soNgayThue, DateTime ngayTraDia, int idPhieuThue)
+        public eThongTinPhieuThue(string idDia, string tenDia, string danhMuc, decimal phiThue, decimal phiTreHan,int soNgayThue, DateTime ngayTraDiaDuKien, int idPhieuThue)
         {
             IdDia = idDia;
             TenDia = tenDia;
@@ -35,9 +35,22 @@ namespace Entities
             PhiThue = phiThue;            
             PhiTreHan = phiTreHan;          
             SoNgayThue = soNgayThue;
-            NgayTraDiaDuKien = ngayTraDia;
+            NgayTraDiaDuKien = ngayTraDiaDuKien;
             IdPhieuThue = idPhieuThue;
         }
+
+        public eThongTinPhieuThue(int idchitiet,string idDia, string tenDia, string danhMuc , decimal phiTreHan ,DateTime ngayThue ,DateTime ngayTraDiaDuKien, DateTime ngayTraDiaThucTe)
+        {
+            IdChiTietPhieuThue = idchitiet;
+            IdDia = idDia;
+            TenDia = tenDia;
+            DanhMuc = danhMuc;
+            PhiTreHan = phiTreHan;
+            NgayThue = ngayThue;
+            NgayTraDiaDuKien = ngayTraDiaDuKien;
+            NgayTraDiaThucTe = ngayTraDiaThucTe;
+        }
+
 
         public eThongTinPhieuThue(DateTime ngayThue, DateTime ngayTraDia,  decimal phiTreHan, int soNgayThue)
         {

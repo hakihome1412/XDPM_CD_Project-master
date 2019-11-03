@@ -69,20 +69,20 @@ namespace BLL
             var kh = (from a in db.KhachHangs
                        join b in db.PhieuThues on a.IdKhachHang equals b.IdKhachHang
                        join c in db.ChiTietPhieuThues on b.IdPhieuThue equals c.IdPhieuThue
-                       where c.IdDia == idDia
+                       where c.IdDia == idDia && a.TrangThaiXoa == false && c.NgayTraDiaThucTe == null
                        select new
                        {
                          a.IdKhachHang,
                          a.HoTen,
                          a.DiaChi,
                          a.SoDienThoai,
-                         c.PhiTre
+                         a.TrangThaiXoa
                        }).Single();
             ekh.IdKhachHang = kh.IdKhachHang;
             ekh.HoTen = kh.HoTen;
             ekh.DiaChi = kh.DiaChi;
             ekh.SoDienThoai = kh.SoDienThoai;
-            ekh.PhiTreHanPhaiTra = Convert.ToDecimal(kh.PhiTre);
+            ekh.TrangThaiXoa = (bool)kh.TrangThaiXoa;
 
             return ekh;
         }
@@ -132,6 +132,22 @@ namespace BLL
                 return true;
             }
             return false;
+        }
+
+        public decimal TongPhiTreKhachHang(string idKhachHang)
+        {
+            decimal tong = 0;
+            var list = (from a in db.KhachHangs
+                        join b in db.PhieuThues on a.IdKhachHang equals b.IdKhachHang
+                        join c in db.ChiTietPhieuThues on b.IdPhieuThue equals c.IdPhieuThue
+                        where a.IdKhachHang == idKhachHang && c.TrangThaiNoPhiTre == true && c.TrangThaiTraPhiTre == false
+                        select c.PhiTre).ToList();
+
+            foreach (decimal item in list)
+            {
+                tong += item;
+            }
+            return (decimal)tong;
         }
 
 

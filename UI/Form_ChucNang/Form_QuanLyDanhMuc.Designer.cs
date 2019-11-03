@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_QuanLyDanhMuc));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.panelQuanLyDM = new System.Windows.Forms.Panel();
+            this.tbSoNgayThue = new DevExpress.XtraEditors.TextEdit();
+            this.label3 = new System.Windows.Forms.Label();
             this.tbPhiTreHan = new DevExpress.XtraEditors.TextEdit();
             this.label4 = new System.Windows.Forms.Label();
             this.tbPhiThue = new DevExpress.XtraEditors.TextEdit();
@@ -40,22 +42,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panelThaoTac = new System.Windows.Forms.Panel();
-            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
-            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSua = new DevExpress.XtraEditors.SimpleButton();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.IdDanhMuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenDanhMuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhiThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhiTreHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbSoNgayThue = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.btn_SuaPhiThue = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_SuaPhiTreHan = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_SuaSoNgayThue = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Huy = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.panelQuanLyDM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbSoNgayThue.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPhiTreHan.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPhiThue.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbIdDanhMuc.Properties)).BeginInit();
@@ -64,7 +66,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbSoNgayThue.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -94,15 +95,36 @@
             this.panelQuanLyDM.Controls.Add(this.tbTenDanhMuc);
             this.panelQuanLyDM.Controls.Add(this.label1);
             this.panelQuanLyDM.Controls.Add(this.label2);
-            this.panelQuanLyDM.Enabled = false;
             this.panelQuanLyDM.Location = new System.Drawing.Point(21, 36);
             this.panelQuanLyDM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelQuanLyDM.Name = "panelQuanLyDM";
             this.panelQuanLyDM.Size = new System.Drawing.Size(427, 176);
             this.panelQuanLyDM.TabIndex = 53;
             // 
+            // tbSoNgayThue
+            // 
+            this.tbSoNgayThue.Enabled = false;
+            this.tbSoNgayThue.Location = new System.Drawing.Point(166, 147);
+            this.tbSoNgayThue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbSoNgayThue.Name = "tbSoNgayThue";
+            this.tbSoNgayThue.Size = new System.Drawing.Size(250, 20);
+            this.tbSoNgayThue.TabIndex = 1005;
+            this.tbSoNgayThue.EditValueChanged += new System.EventHandler(this.tbSoNgayThue_EditValueChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(69, 154);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 13);
+            this.label3.TabIndex = 1004;
+            this.label3.Text = "Số Ngày Thuê:";
+            // 
             // tbPhiTreHan
             // 
+            this.tbPhiTreHan.Enabled = false;
             this.tbPhiTreHan.Location = new System.Drawing.Point(166, 116);
             this.tbPhiTreHan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbPhiTreHan.Name = "tbPhiTreHan";
@@ -123,6 +145,7 @@
             // 
             // tbPhiThue
             // 
+            this.tbPhiThue.Enabled = false;
             this.tbPhiThue.Location = new System.Drawing.Point(166, 83);
             this.tbPhiThue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbPhiThue.Name = "tbPhiThue";
@@ -185,63 +208,26 @@
             // 
             // panelThaoTac
             // 
-            this.panelThaoTac.Controls.Add(this.btnThem);
-            this.panelThaoTac.Controls.Add(this.btnHuy);
-            this.panelThaoTac.Controls.Add(this.btnSua);
+            this.panelThaoTac.Controls.Add(this.btn_Huy);
+            this.panelThaoTac.Controls.Add(this.btn_SuaSoNgayThue);
+            this.panelThaoTac.Controls.Add(this.btn_SuaPhiTreHan);
+            this.panelThaoTac.Controls.Add(this.btn_SuaPhiThue);
             this.panelThaoTac.Controls.Add(this.btnLuu);
-            this.panelThaoTac.Location = new System.Drawing.Point(8, 24);
+            this.panelThaoTac.Location = new System.Drawing.Point(7, 23);
             this.panelThaoTac.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelThaoTac.Name = "panelThaoTac";
             this.panelThaoTac.Size = new System.Drawing.Size(509, 187);
             this.panelThaoTac.TabIndex = 3;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.btnThem.Appearance.Options.UseFont = true;
-            this.btnThem.Location = new System.Drawing.Point(44, 56);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(73, 71);
-            this.btnThem.TabIndex = 4;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.btnHuy.Appearance.Options.UseFont = true;
-            this.btnHuy.Enabled = false;
-            this.btnHuy.Location = new System.Drawing.Point(378, 56);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(73, 71);
-            this.btnHuy.TabIndex = 3;
-            this.btnHuy.Text = "Huỷ";
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
-            // 
-            // btnSua
-            // 
-            this.btnSua.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.btnSua.Appearance.Options.UseFont = true;
-            this.btnSua.Enabled = false;
-            this.btnSua.Location = new System.Drawing.Point(159, 56);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(73, 71);
-            this.btnSua.TabIndex = 5;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnLuu
             // 
             this.btnLuu.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnLuu.Appearance.Options.UseFont = true;
             this.btnLuu.Enabled = false;
-            this.btnLuu.Location = new System.Drawing.Point(269, 56);
+            this.btnLuu.Location = new System.Drawing.Point(330, 13);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(73, 71);
+            this.btnLuu.Size = new System.Drawing.Size(154, 71);
             this.btnLuu.TabIndex = 2;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
@@ -259,7 +245,7 @@
             this.PhiThue,
             this.PhiTreHan,
             this.Column1});
-            this.dataGridView1.Location = new System.Drawing.Point(529, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(530, 2);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
@@ -271,21 +257,6 @@
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // groupControl2
-            // 
-            this.groupControl2.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.groupControl2.Appearance.Options.UseBackColor = true;
-            this.groupControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.groupControl2.Controls.Add(this.panelThaoTac);
-            this.groupControl2.Location = new System.Drawing.Point(3, 223);
-            this.groupControl2.LookAndFeel.SkinName = "Office 2010 Blue";
-            this.groupControl2.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.groupControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(521, 216);
-            this.groupControl2.TabIndex = 54;
-            this.groupControl2.Text = "Thao Tác";
             // 
             // IdDanhMuc
             // 
@@ -331,24 +302,69 @@
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
-            // label3
+            // groupControl2
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(69, 154);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 13);
-            this.label3.TabIndex = 1004;
-            this.label3.Text = "Số Ngày Thuê:";
+            this.groupControl2.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.groupControl2.Appearance.Options.UseBackColor = true;
+            this.groupControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.groupControl2.Controls.Add(this.panelThaoTac);
+            this.groupControl2.Location = new System.Drawing.Point(3, 223);
+            this.groupControl2.LookAndFeel.SkinName = "Office 2010 Blue";
+            this.groupControl2.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.groupControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(521, 216);
+            this.groupControl2.TabIndex = 54;
+            this.groupControl2.Text = "Thao Tác";
             // 
-            // tbSoNgayThue
+            // btn_SuaPhiThue
             // 
-            this.tbSoNgayThue.Location = new System.Drawing.Point(166, 147);
-            this.tbSoNgayThue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbSoNgayThue.Name = "tbSoNgayThue";
-            this.tbSoNgayThue.Size = new System.Drawing.Size(250, 20);
-            this.tbSoNgayThue.TabIndex = 1005;
+            this.btn_SuaPhiThue.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.btn_SuaPhiThue.Appearance.Options.UseFont = true;
+            this.btn_SuaPhiThue.Location = new System.Drawing.Point(22, 13);
+            this.btn_SuaPhiThue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_SuaPhiThue.Name = "btn_SuaPhiThue";
+            this.btn_SuaPhiThue.Size = new System.Drawing.Size(220, 44);
+            this.btn_SuaPhiThue.TabIndex = 4;
+            this.btn_SuaPhiThue.Text = "Sửa Phí Thuê";
+            this.btn_SuaPhiThue.Click += new System.EventHandler(this.btn_SuaPhiThue_Click);
+            // 
+            // btn_SuaPhiTreHan
+            // 
+            this.btn_SuaPhiTreHan.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.btn_SuaPhiTreHan.Appearance.Options.UseFont = true;
+            this.btn_SuaPhiTreHan.Location = new System.Drawing.Point(22, 71);
+            this.btn_SuaPhiTreHan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_SuaPhiTreHan.Name = "btn_SuaPhiTreHan";
+            this.btn_SuaPhiTreHan.Size = new System.Drawing.Size(220, 44);
+            this.btn_SuaPhiTreHan.TabIndex = 5;
+            this.btn_SuaPhiTreHan.Text = "Sửa Phí Trễ Hạn";
+            this.btn_SuaPhiTreHan.Click += new System.EventHandler(this.btn_SuaPhiTreHan_Click);
+            // 
+            // btn_SuaSoNgayThue
+            // 
+            this.btn_SuaSoNgayThue.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.btn_SuaSoNgayThue.Appearance.Options.UseFont = true;
+            this.btn_SuaSoNgayThue.Location = new System.Drawing.Point(22, 131);
+            this.btn_SuaSoNgayThue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_SuaSoNgayThue.Name = "btn_SuaSoNgayThue";
+            this.btn_SuaSoNgayThue.Size = new System.Drawing.Size(220, 44);
+            this.btn_SuaSoNgayThue.TabIndex = 6;
+            this.btn_SuaSoNgayThue.Text = "Sửa Số Ngày Thuê";
+            this.btn_SuaSoNgayThue.Click += new System.EventHandler(this.btn_SuaSoNgayThue_Click);
+            // 
+            // btn_Huy
+            // 
+            this.btn_Huy.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.btn_Huy.Appearance.Options.UseFont = true;
+            this.btn_Huy.Enabled = false;
+            this.btn_Huy.Location = new System.Drawing.Point(330, 104);
+            this.btn_Huy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Huy.Name = "btn_Huy";
+            this.btn_Huy.Size = new System.Drawing.Size(154, 71);
+            this.btn_Huy.TabIndex = 7;
+            this.btn_Huy.Text = "Hủy";
+            this.btn_Huy.Click += new System.EventHandler(this.btn_Huy_Click);
             // 
             // Form_QuanLyDanhMuc
             // 
@@ -368,6 +384,7 @@
             this.groupControl1.ResumeLayout(false);
             this.panelQuanLyDM.ResumeLayout(false);
             this.panelQuanLyDM.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbSoNgayThue.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPhiTreHan.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPhiThue.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbIdDanhMuc.Properties)).EndInit();
@@ -376,7 +393,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tbSoNgayThue.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -389,9 +405,6 @@
         private DevExpress.XtraEditors.TextEdit tbTenDanhMuc;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelThaoTac;
-        private DevExpress.XtraEditors.SimpleButton btnThem;
-        private DevExpress.XtraEditors.SimpleButton btnHuy;
-        private DevExpress.XtraEditors.SimpleButton btnSua;
         private DevExpress.XtraEditors.SimpleButton btnLuu;
         private System.Windows.Forms.DataGridView dataGridView1;
         private DevExpress.XtraEditors.GroupControl groupControl2;
@@ -407,5 +420,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private DevExpress.XtraEditors.TextEdit tbSoNgayThue;
         private System.Windows.Forms.Label label3;
+        private DevExpress.XtraEditors.SimpleButton btn_SuaSoNgayThue;
+        private DevExpress.XtraEditors.SimpleButton btn_SuaPhiTreHan;
+        private DevExpress.XtraEditors.SimpleButton btn_SuaPhiThue;
+        private DevExpress.XtraEditors.SimpleButton btn_Huy;
     }
 }

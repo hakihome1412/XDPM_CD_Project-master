@@ -34,8 +34,6 @@
             this.btnXacNhanThue = new DevExpress.XtraEditors.SimpleButton();
             this.panelKH = new DevExpress.XtraEditors.GroupControl();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tbTienNo = new DevExpress.XtraEditors.TextEdit();
-            this.Nợ = new System.Windows.Forms.Label();
             this.tbDiaChi = new DevExpress.XtraEditors.TextEdit();
             this.tbTenKhachHang = new DevExpress.XtraEditors.TextEdit();
             this.tbSDT = new DevExpress.XtraEditors.TextEdit();
@@ -52,8 +50,6 @@
             this.SoNgayThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayTraDia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelNhapDia = new DevExpress.XtraEditors.GroupControl();
-            this.tbSoNgayThue = new DevExpress.XtraEditors.TextEdit();
-            this.label12 = new System.Windows.Forms.Label();
             this.tbIdDia = new DevExpress.XtraEditors.TextEdit();
             this.btnThemDia = new DevExpress.XtraEditors.SimpleButton();
             this.label2 = new System.Windows.Forms.Label();
@@ -75,7 +71,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tbTongTienThanhToan = new DevExpress.XtraEditors.TextEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbNgaythue = new DevExpress.XtraEditors.TextEdit();
             this.label10 = new System.Windows.Forms.Label();
@@ -86,14 +81,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelKH)).BeginInit();
             this.panelKH.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbTienNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbDiaChi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbTenKhachHang.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSDT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelNhapDia)).BeginInit();
             this.panelNhapDia.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbSoNgayThue.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbIdDia.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
@@ -109,7 +102,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbTongTienThanhToan.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbNgaythue.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbTongSoDia.Properties)).BeginInit();
@@ -169,8 +161,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.tbTienNo);
-            this.panel2.Controls.Add(this.Nợ);
             this.panel2.Controls.Add(this.tbDiaChi);
             this.panel2.Controls.Add(this.tbTenKhachHang);
             this.panel2.Controls.Add(this.tbSDT);
@@ -183,30 +173,10 @@
             this.panel2.Size = new System.Drawing.Size(262, 152);
             this.panel2.TabIndex = 86;
             // 
-            // tbTienNo
-            // 
-            this.tbTienNo.Enabled = false;
-            this.tbTienNo.Location = new System.Drawing.Point(67, 106);
-            this.tbTienNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbTienNo.Name = "tbTienNo";
-            this.tbTienNo.Size = new System.Drawing.Size(174, 20);
-            this.tbTienNo.TabIndex = 83;
-            // 
-            // Nợ
-            // 
-            this.Nợ.AutoSize = true;
-            this.Nợ.BackColor = System.Drawing.Color.Transparent;
-            this.Nợ.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.Nợ.Location = new System.Drawing.Point(32, 109);
-            this.Nợ.Name = "Nợ";
-            this.Nợ.Size = new System.Drawing.Size(24, 13);
-            this.Nợ.TabIndex = 84;
-            this.Nợ.Text = "Nợ:";
-            // 
             // tbDiaChi
             // 
             this.tbDiaChi.Enabled = false;
-            this.tbDiaChi.Location = new System.Drawing.Point(67, 45);
+            this.tbDiaChi.Location = new System.Drawing.Point(71, 58);
             this.tbDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbDiaChi.Name = "tbDiaChi";
             this.tbDiaChi.Size = new System.Drawing.Size(174, 20);
@@ -215,7 +185,7 @@
             // tbTenKhachHang
             // 
             this.tbTenKhachHang.Enabled = false;
-            this.tbTenKhachHang.Location = new System.Drawing.Point(67, 14);
+            this.tbTenKhachHang.Location = new System.Drawing.Point(71, 27);
             this.tbTenKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbTenKhachHang.Name = "tbTenKhachHang";
             this.tbTenKhachHang.Size = new System.Drawing.Size(174, 20);
@@ -224,7 +194,7 @@
             // tbSDT
             // 
             this.tbSDT.Enabled = false;
-            this.tbSDT.Location = new System.Drawing.Point(67, 77);
+            this.tbSDT.Location = new System.Drawing.Point(71, 90);
             this.tbSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbSDT.Name = "tbSDT";
             this.tbSDT.Size = new System.Drawing.Size(174, 20);
@@ -235,7 +205,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(24, 80);
+            this.label8.Location = new System.Drawing.Point(28, 93);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(33, 13);
             this.label8.TabIndex = 82;
@@ -246,7 +216,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(8, 18);
+            this.label6.Location = new System.Drawing.Point(12, 31);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 13);
             this.label6.TabIndex = 80;
@@ -257,7 +227,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(8, 47);
+            this.label5.Location = new System.Drawing.Point(12, 60);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 13);
             this.label5.TabIndex = 81;
@@ -352,7 +322,7 @@
             // NgayTraDia
             // 
             this.NgayTraDia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NgayTraDia.DataPropertyName = "NgayTraDia";
+            this.NgayTraDia.DataPropertyName = "NgayTraDiaDuKien";
             this.NgayTraDia.HeaderText = "Ngày Trả Đĩa";
             this.NgayTraDia.Name = "NgayTraDia";
             this.NgayTraDia.ReadOnly = true;
@@ -362,8 +332,6 @@
             this.panelNhapDia.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.panelNhapDia.Appearance.Options.UseBackColor = true;
             this.panelNhapDia.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.panelNhapDia.Controls.Add(this.tbSoNgayThue);
-            this.panelNhapDia.Controls.Add(this.label12);
             this.panelNhapDia.Controls.Add(this.tbIdDia);
             this.panelNhapDia.Controls.Add(this.btnThemDia);
             this.panelNhapDia.Controls.Add(this.label2);
@@ -376,31 +344,11 @@
             this.panelNhapDia.TabIndex = 77;
             this.panelNhapDia.Text = "Nhập Thông Tin Đĩa:";
             // 
-            // tbSoNgayThue
-            // 
-            this.tbSoNgayThue.Enabled = false;
-            this.tbSoNgayThue.Location = new System.Drawing.Point(12, 115);
-            this.tbSoNgayThue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbSoNgayThue.Name = "tbSoNgayThue";
-            this.tbSoNgayThue.Size = new System.Drawing.Size(134, 20);
-            this.tbSoNgayThue.TabIndex = 87;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(9, 88);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(117, 13);
-            this.label12.TabIndex = 86;
-            this.label12.Text = "Nhập Số Ngày Thuê:";
-            // 
             // tbIdDia
             // 
             this.tbIdDia.EditValue = "CD00000006";
             this.tbIdDia.Enabled = false;
-            this.tbIdDia.Location = new System.Drawing.Point(12, 56);
+            this.tbIdDia.Location = new System.Drawing.Point(12, 77);
             this.tbIdDia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbIdDia.Name = "tbIdDia";
             this.tbIdDia.Size = new System.Drawing.Size(134, 20);
@@ -424,7 +372,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(9, 35);
+            this.label2.Location = new System.Drawing.Point(9, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 77;
@@ -563,9 +511,9 @@
             this.label11.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.label11.Location = new System.Drawing.Point(21, 159);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(58, 13);
+            this.label11.Size = new System.Drawing.Size(103, 13);
             this.label11.TabIndex = 82;
-            this.label11.Text = "Ngày trả:";
+            this.label11.Text = "Ngày trả dự kiến:";
             // 
             // label9
             // 
@@ -636,7 +584,6 @@
             this.groupControl2.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.groupControl2.Appearance.Options.UseBackColor = true;
             this.groupControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.groupControl2.Controls.Add(this.textEdit1);
             this.groupControl2.Controls.Add(this.panel1);
             this.groupControl2.Location = new System.Drawing.Point(281, 292);
             this.groupControl2.LookAndFeel.SkinName = "Office 2010 Blue";
@@ -647,15 +594,6 @@
             this.groupControl2.TabIndex = 78;
             this.groupControl2.Text = "Thông Tin Phiếu Thuê:";
             // 
-            // textEdit1
-            // 
-            this.textEdit1.Enabled = false;
-            this.textEdit1.Location = new System.Drawing.Point(417, 46);
-            this.textEdit1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(174, 20);
-            this.textEdit1.TabIndex = 85;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.tbTongTienThanhToan);
@@ -664,7 +602,7 @@
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.tbTongSoDia);
-            this.panel1.Location = new System.Drawing.Point(16, 36);
+            this.panel1.Location = new System.Drawing.Point(124, 35);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(374, 99);
@@ -724,7 +662,6 @@
             this.panelKH.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbTienNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbDiaChi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbTenKhachHang.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSDT.Properties)).EndInit();
@@ -732,7 +669,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelNhapDia)).EndInit();
             this.panelNhapDia.ResumeLayout(false);
             this.panelNhapDia.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbSoNgayThue.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbIdDia.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
             this.groupControl5.ResumeLayout(false);
@@ -750,7 +686,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbTongTienThanhToan.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbNgaythue.Properties)).EndInit();
@@ -795,12 +730,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
         private DevExpress.XtraEditors.TextEdit tbIdDia;
-        private DevExpress.XtraEditors.TextEdit tbSoNgayThue;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.TextEdit tbTTIdDia;
         private System.Windows.Forms.Label label15;
         private DevExpress.XtraEditors.TextEdit tbTTSoNgayThue;
+        private DevExpress.XtraEditors.TextEdit tbTTNgayTraDia;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdDia;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenDia;
         private System.Windows.Forms.DataGridViewTextBoxColumn DanhMuc;
@@ -808,9 +742,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PhiTreHan;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoNgayThue;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayTraDia;
-        private DevExpress.XtraEditors.TextEdit tbTTNgayTraDia;
-        private DevExpress.XtraEditors.TextEdit tbTienNo;
-        private System.Windows.Forms.Label Nợ;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
     }
 }

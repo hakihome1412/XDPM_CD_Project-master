@@ -96,12 +96,14 @@ namespace UI.Form_ChucNang
 
         private void Form_QuanLyKhoDia_Load(object sender, EventArgs e)
         {
+
             BindingSource binding = new BindingSource();
             binding.DataSource = dmbll.LayDanhSachDanhMuc();
             cbbPhanLoaiDanhMuc.DataSource = binding.DataSource;
             cbbPhanLoaiDanhMuc.DisplayMember = "TenDanhMuc";
             cbbPhanLoaiDanhMuc.ValueMember = "TenDanhMuc";
             LoadDataTieuDe();
+            LoadDataDia(dataGridViewTD.CurrentRow.Cells[0].Value.ToString().Trim());
             panelThemDia.Visible = false;
         }
 
@@ -330,13 +332,17 @@ namespace UI.Form_ChucNang
             tbIdDia.Text = dataGridViewD.CurrentRow.Cells[0].Value.ToString().Trim();
             tbTenTieuDe.Text = dataGridViewTD.CurrentRow.Cells[1].Value.ToString().Trim();
             tbTrangThai.Text = dataGridViewD.CurrentRow.Cells[1].Value.ToString().Trim();
-            if (tbTrangThai.Text == "True")
+            if (tbTrangThai.Text == "duocthue")
             {
                 tbTrangThai.Text = "Đang được thuê";
             }
-            else if (tbTrangThai.Text == "False")
+            else if (tbTrangThai.Text == "cosan")
             {
                 tbTrangThai.Text = "Có sẵn";
+            }
+            else
+            {
+                tbTrangThai.Text = "Được đặt";
             }
             string tenNguoiMuon = diabll.LayTenNguoiThue((dataGridViewD.CurrentRow.Cells[0].Value.ToString()));
             tenNguoiMuon = tenNguoiMuon.Replace("{ HoTen = ", "");
@@ -416,6 +422,17 @@ namespace UI.Form_ChucNang
         private void cbbPhanLoaiDanhMuc_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadDataTieuDe();
+        }
+
+        private void Form_QuanLyKhoDia_Shown(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form_QuanLyKhoDia_Activated(object sender, EventArgs e)
+        {
+            LoadDataTieuDe();
+            LoadDataDia(dataGridViewTD.CurrentRow.Cells[0].Value.ToString());
         }
     }
 }

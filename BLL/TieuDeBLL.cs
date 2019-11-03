@@ -39,6 +39,14 @@ namespace BLL
 
         }
 
+        public bool kiemtraSoLuongDiaConLai(string idTieuDe)
+        {
+            int count = db.Dias.Where(p => p.IdTieuDe == idTieuDe).Count();
+            if (count > 0)
+                return true;
+            return false;
+        }
+
         public List<eTieuDe> LayDanhSachTieuDeTheoTenDanhMuc(string tenDanhMuc)
         {
             List<eTieuDe> list = new List<eTieuDe>();
@@ -123,6 +131,7 @@ namespace BLL
             td.SoLuongDia = etd.SoLuongDia;
             td.IdDanhMuc = etd.IdDanhMuc;           
             td.TrangThaiXoa = etd.TrangThaiXoa;
+            td.SoLuongDiaCoSan = etd.SoLuongDiaCoSan;
             if (!db.TieuDes.Contains(td))
             {
                 db.TieuDes.InsertOnSubmit(td);
@@ -161,22 +170,6 @@ namespace BLL
             return false;
         }
 
-        public bool kiemTraTrungTieuDe(string tenTieuDe)
-        {
-            //var td = (from a in db.TieuDes
-            //             where a.TrangThaiXoa == false
-            //             select a.TenTieuDe);
-            List<TieuDe> td = new List<TieuDe>();
-            td = db.TieuDes.Where(a => a.TrangThaiXoa == false).ToList();
-            foreach (var item in td)
-            {
-                if(item.TenTieuDe == tenTieuDe)
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
         public string layIdTieuDeBangTenTieuDe(string tenTieuDe)
         {
             string id = (from a in db.TieuDes
@@ -211,14 +204,56 @@ namespace BLL
                    
         }
 
+        public eTieuDe LayTieuDeTheoIDTieuDe(string idTieuDe)
+        {
+            eTieuDe td = new eTieuDe();
+
+            TieuDe tdd = db.TieuDes.SingleOrDefault(p => p.IdTieuDe == idTieuDe);
+            if(tdd != null)
+            {
+                td.IdTieuDe = tdd.IdTieuDe;
+                td.TenTieuDe = tdd.TenTieuDe;
+                td.IdDanhMuc = (int) tdd.IdDanhMuc;
+                td.SoLuongDia =(int) tdd.SoLuongDia;
+                td.SoLuongDiaCoSan =(int) tdd.SoLuongDiaCoSan;
+                tdd.TrangThaiXoa = tdd.TrangThaiXoa;
+
+                return td;
+            }
+
+            return null;
+        }
+
+        public bool kiemtraTieuDeDaTonTai(string tenTieuDe)
+        {
+            TieuDe td = db.TieuDes.SingleOrDefault(p => p.TenTieuDe == tenTieuDe);
+            if (td != null)
+                return true;
+            return false;
+        }
+
+        public bool capnhatTrangThaiXoa(string tenTieuDe , bool e)
+        {
+            TieuDe td = db.TieuDes.SingleOrDefault(p => p.TenTieuDe == tenTieuDe);
+            if(td!=null)
+            {
+                td.TrangThaiXoa = e;
+                db.SubmitChanges();
+                return true;
+            }
+
+            return false;
+        }
+
         public void capnhatSoLuong(string idTieuDe)
         {
             TieuDe td = db.TieuDes.SingleOrDefault(p => p.IdTieuDe == idTieuDe);
 
             int tongdia = db.Dias.Where(p => p.IdTieuDe == idTieuDe && p.TrangThaiXoa==false).Count();
+            int tongdiacosan = db.Dias.Where(p => p.IdTieuDe == idTieuDe && p.TrangThaiXoa == false && p.TrangThaiThue == "cosan").Count();
 
             td.SoLuongDia = tongdia;
-            td.SoLuongDiaCoSan += 1;
+            td.SoLuongDiaCoSan = tongdiacosan;
             db.SubmitChanges();
         }
     }

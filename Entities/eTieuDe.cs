@@ -27,6 +27,8 @@ namespace Entities
            
         }
 
+        
+
         //Dùng để hiển thị dtgv form quản lý tiêu đề
         public eTieuDe(string idTieuDe, string tenTieuDe, int soLuongDia)
         {

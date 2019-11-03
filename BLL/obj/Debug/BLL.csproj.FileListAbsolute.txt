@@ -58,3 +58,15 @@ C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\obj\D
 C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\obj\Debug\BLL.dll
 C:\Users\ADMIN\Downloads\XDPM_CD_PROJECT-master\XDPM_CD_PROJECT-master\BLL\obj\Debug\BLL.pdb
+C:\Users\ADMIN\Desktop\XDPM_CD_Project-master\BLL\bin\Debug\BLL.dll
+C:\Users\ADMIN\Desktop\XDPM_CD_Project-master\BLL\bin\Debug\BLL.pdb
+C:\Users\ADMIN\Desktop\XDPM_CD_Project-master\BLL\bin\Debug\DAL.dll
+C:\Users\ADMIN\Desktop\XDPM_CD_Project-master\BLL\bin\Debug\Entities.dll
+C:\Users\ADMIN\Desktop\XDPM_CD_Project-master\BLL\bin\Debug\DAL.pdb
+C:\Users\ADMIN\Desktop\XDPM_CD_Project-master\BLL\bin\Debug\DAL.dll.config
+C:\Users\ADMIN\Desktop\XDPM_CD_Project-master\BLL\bin\Debug\Entities.pdb
+C:\Users\ADMIN\Desktop\XDPM_CD_Project-master\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\XDPM_CD_Project-master\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\XDPM_CD_Project-master\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\XDPM_CD_Project-master\BLL\obj\Debug\BLL.dll
+C:\Users\ADMIN\Desktop\XDPM_CD_Project-master\BLL\obj\Debug\BLL.pdb

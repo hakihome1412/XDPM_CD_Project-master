@@ -18,11 +18,13 @@ namespace BLL
 
         public int LayIdPhieuThueLonNhat()
         {
+            if (db.PhieuThues.Count() == 0)
+                return 0;
             int idpt = (from a in db.PhieuThues
-                         orderby a.IdPhieuThue descending
-                         select a.IdPhieuThue
+                        orderby a.IdPhieuThue descending
+                        select (int)a.IdPhieuThue
                             ).Take(1).First();
-            return Convert.ToInt32(idpt);
+            return idpt;
         }
 
 

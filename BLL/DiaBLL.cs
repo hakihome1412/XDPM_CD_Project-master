@@ -150,6 +150,14 @@ namespace BLL
             return false;
         }
 
+        public bool kiemtraIDDiaCoTonTai(string idDia)
+        {
+            Dia d = db.Dias.SingleOrDefault(p => p.IdDia == idDia);
+            if (d == null)
+                return false;
+            return true;
+        }
+
         // true: đĩa đang được thuê
         public bool kiemTraDiaTaiCuaHang(string idDia)
         {
@@ -169,6 +177,15 @@ namespace BLL
             //}
             //return false;
         }
-       
+
+        public bool kiemTraTinhTrangDiaCoSan(string idDia)
+        {
+            Dia d = new Dia();
+            d = db.Dias.Where(a => a.IdDia == idDia && a.TrangThaiThue == "cosan").SingleOrDefault();
+            if (d != null)
+                return true; // Đĩa đó có sẵn
+            return false; // Đĩa đó không có sẵn
+        }
+
     }
 }

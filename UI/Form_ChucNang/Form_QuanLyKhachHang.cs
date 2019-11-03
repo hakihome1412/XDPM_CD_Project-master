@@ -82,7 +82,12 @@ namespace UI.Form_ChucNang
         //Load Form
         private void Form_QuanLyKhachHang_Load(object sender, EventArgs e)
         {
+            formDN = new Form_QuanLy.Form_DangNhap();
             loadData();
+            LoadCell();
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
+            btnThem.Enabled = true;
         }
 
         
@@ -132,12 +137,13 @@ namespace UI.Form_ChucNang
             KEY = 0;
             XoaPanel();
             panelQuanLyTTKH.Enabled = false;
-            btnSua.Enabled = false;
-            btnXoa.Enabled = false;
+            btnThem.Enabled = true;
+            btnXoa.Enabled = true;
+            btnSua.Enabled = true;
             btnLuu.Enabled = false;
             btnHuy.Enabled = false;
-            btnThem.Enabled = true;
             dataGridView1.Enabled = true;
+            LoadCell();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -190,8 +196,12 @@ namespace UI.Form_ChucNang
                                     btnLuu.Enabled = false;
                                     btnHuy.Enabled = false;
                                     btnThem.Enabled = true;
+                                    btnXoa.Enabled = true;
+                                    btnSua.Enabled = true;
                                     dataGridView1.Enabled = true;
                                     KEY = 0;
+                                    LoadCell();
+
 
                                 }
 
@@ -259,9 +269,12 @@ namespace UI.Form_ChucNang
                                     btnLuu.Enabled = false;
                                     btnHuy.Enabled = false;
                                     btnThem.Enabled = true;
+                                    btnSua.Enabled = true;
+                                    btnXoa.Enabled = true;
                                     KEY = 0;
                                     loadData();
                                     dataGridView1.Enabled = true;
+                                    LoadCell();
                                 }
 
                             }
@@ -287,12 +300,15 @@ namespace UI.Form_ChucNang
             loadData();
         }
 
+        private Form_QuanLy.Form_DangNhap formDN;
+
         private void btnXoa_Click(object sender, EventArgs e)
         {
             #region Xóa
             if (Form_Main.trangThaiLogin != true)
             {
                 XtraMessageBox.Show("Vui lòng đăng nhập tài khoản quản lý để thực hiện chức năng này !");
+                formDN.ShowDialog();
             }
             else if(Form_Main.trangThaiLogin == true)
             {
@@ -318,6 +334,7 @@ namespace UI.Form_ChucNang
                             loadData();
                             dataGridView1.Update();
                             dataGridView1.Refresh();
+                            LoadCell();
                         }
                     }
                     catch (Exception ex)
