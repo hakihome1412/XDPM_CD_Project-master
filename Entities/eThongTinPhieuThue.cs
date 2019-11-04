@@ -27,6 +27,33 @@ namespace Entities
         public int SoNgayTreHan { get; set; }
         public int IdChiTietPhieuThue { get; set; }
 
+        //Thông tin phụ cho đặt đĩa
+        public int IdPhieuDat { get; set; }
+        public int IdChiTietPhieuDat { get; set; }
+        public String IdTieuDe { get; set; }
+        public String TenTieuDe { get; set; }
+        public DateTime NgayDat { get; set; }
+        public DateTime NgayXuLyDonDat { get; set; }
+
+        
+        public eThongTinPhieuThue(string idTieuDe, string tenTieuDe,DateTime ngayDat)
+        {
+            IdTieuDe = idTieuDe;
+            TenTieuDe = tenTieuDe;
+            NgayDat = ngayDat;
+        }
+
+        public eThongTinPhieuThue(int idChiTietPhieuDat, String idTieuDe, String tenTieuDe, DateTime ngayDat, DateTime ngayXuLyDonDat, int idPhieuDat)
+        {
+            IdChiTietPhieuDat = idChiTietPhieuDat;
+            IdTieuDe = idTieuDe;
+            TenTieuDe = tenTieuDe;
+            NgayDat = ngayDat;
+            NgayXuLyDonDat = ngayXuLyDonDat;
+            IdPhieuDat = idPhieuDat;
+        }
+
+
         public eThongTinPhieuThue(string idDia, string tenDia, string danhMuc, decimal phiThue, decimal phiTreHan,int soNgayThue, DateTime ngayTraDiaDuKien, int idPhieuThue)
         {
             IdDia = idDia;

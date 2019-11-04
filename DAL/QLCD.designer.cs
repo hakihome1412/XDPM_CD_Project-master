@@ -183,7 +183,9 @@ namespace DAL
 		
 		private string _IdTieuDe;
 		
-		private System.Nullable<int> _SoLuong;
+		private string _TenTieuDe;
+		
+		private System.Nullable<System.DateTime> _NgayXuLyDonDat;
 		
 		private System.Nullable<int> _IdPhieuDat;
 		
@@ -199,8 +201,10 @@ namespace DAL
     partial void OnIdChiTietPhieuDatChanged();
     partial void OnIdTieuDeChanging(string value);
     partial void OnIdTieuDeChanged();
-    partial void OnSoLuongChanging(System.Nullable<int> value);
-    partial void OnSoLuongChanged();
+    partial void OnTenTieuDeChanging(string value);
+    partial void OnTenTieuDeChanged();
+    partial void OnNgayXuLyDonDatChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayXuLyDonDatChanged();
     partial void OnIdPhieuDatChanging(System.Nullable<int> value);
     partial void OnIdPhieuDatChanged();
     #endregion
@@ -256,22 +260,42 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
-		public System.Nullable<int> SoLuong
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenTieuDe", DbType="NVarChar(50)")]
+		public string TenTieuDe
 		{
 			get
 			{
-				return this._SoLuong;
+				return this._TenTieuDe;
 			}
 			set
 			{
-				if ((this._SoLuong != value))
+				if ((this._TenTieuDe != value))
 				{
-					this.OnSoLuongChanging(value);
+					this.OnTenTieuDeChanging(value);
 					this.SendPropertyChanging();
-					this._SoLuong = value;
-					this.SendPropertyChanged("SoLuong");
-					this.OnSoLuongChanged();
+					this._TenTieuDe = value;
+					this.SendPropertyChanged("TenTieuDe");
+					this.OnTenTieuDeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayXuLyDonDat", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayXuLyDonDat
+		{
+			get
+			{
+				return this._NgayXuLyDonDat;
+			}
+			set
+			{
+				if ((this._NgayXuLyDonDat != value))
+				{
+					this.OnNgayXuLyDonDatChanging(value);
+					this.SendPropertyChanging();
+					this._NgayXuLyDonDat = value;
+					this.SendPropertyChanged("NgayXuLyDonDat");
+					this.OnNgayXuLyDonDatChanged();
 				}
 			}
 		}

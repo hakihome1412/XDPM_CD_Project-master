@@ -228,9 +228,13 @@ namespace BLL
                 db.ChiTietPhieuThues.InsertOnSubmit(ctpt);
                 db.SubmitChanges();
 
-                Dia dia = new Dia();               
-                dia = db.Dias.Where(a => a.IdDia== item.IdDia).SingleOrDefault();                      
+                Dia dia = new Dia();
+                TieuDe td = new TieuDe();
+                dia = db.Dias.Where(a => a.IdDia== item.IdDia).SingleOrDefault();
+                td = db.TieuDes.SingleOrDefault(p => p.IdTieuDe == dia.IdTieuDe);
+                
                 dia.TrangThaiThue = "duocthue";
+                td.SoLuongDiaCoSan = td.SoLuongDiaCoSan - 1;
                 db.SubmitChanges();                
             }
             return true;

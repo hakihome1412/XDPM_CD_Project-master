@@ -42,6 +42,14 @@ namespace BLL
                             ).Take(1).First().ToString();
             return td;
         }
+
+        public string TrangThaiDia(string idDia)
+        {
+            Dia dia = db.Dias.SingleOrDefault(p => p.IdDia == idDia);
+            if (dia == null)
+                return "null";
+            return dia.TrangThaiThue;
+        }
        
         public string LayTenNguoiThue(string idDia)
         {
@@ -140,9 +148,12 @@ namespace BLL
         {
             Dia dia = new Dia();
             dia = db.Dias.Where(a => a.IdDia== idDia).SingleOrDefault();
-            if (dia != null)
+            TieuDe td = new TieuDe();
+            td = db.TieuDes.SingleOrDefault(p => p.IdTieuDe == dia.IdTieuDe);
+            if (dia != null && td != null)
             {
                 dia.TrangThaiThue = "cosan";
+                td.SoLuongDiaCoSan = td.SoLuongDiaCoSan + 1;
 
                 db.SubmitChanges();
                 return true;

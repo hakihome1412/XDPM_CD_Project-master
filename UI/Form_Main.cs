@@ -306,7 +306,7 @@ namespace UI
                 {
 
 
-                    if (item is Form_QuanLyPhiTre)
+                    if (item is Form_TraDia)
                     {
                         item.Activate();
                     }

@@ -201,49 +201,32 @@ namespace UI.Form_ChucNang
         {
             if (!diabll.kiemtraIDDiaCoTonTai(tbIdDia.Text))
             {
-                XtraMessageBox.Show("Dữ liệu nhập không hợp lệ hoặc Không tồn tại ID Đĩa này trong hệ thống !");
+                XtraMessageBox.Show("KHÔNG TỒN TẠI ID Đĩa này trong hệ thống . Nhập lại !");
             }
             else
             {
-                if(!diabll.kiemTraTinhTrangDiaCoSan(tbIdDia.Text))
+                if(diabll.TrangThaiDia(tbIdDia.Text) == "duocthue")
                 {
-                    XtraMessageBox.Show("Đĩa này không Có Sẵn tại cửa hàng !");
+                    XtraMessageBox.Show("Đĩa này đang ĐƯỢC THUÊ");
                 }
-                else
+                else 
                 {
-                    //Tạo đối tượng add vào list rồi đẩy ra datagridview
-                    DateTime ngayTraDiaDuKien = DateTime.Now.AddDays(dmbll.LaySoNgayThueTheoIDDia(tbIdDia.Text));
-                    string tenDia = tdbll.LayTenTieuDeBangIdDia(tbIdDia.Text);
-                    string tenDanhMuc = dmbll.LayTenDanhMucBangIdDia(tbIdDia.Text);
-                    decimal phiThue = dmbll.LayPhiThueBangIdDia(tbIdDia.Text);
-                    decimal phiTreHan = dmbll.LayPhiTreHanBangIdDia(tbIdDia.Text);
-                    eThongTinPhieuThue ettpt = new eThongTinPhieuThue(tbIdDia.Text, tenDia, tenDanhMuc, Convert.ToDecimal(phiThue), Convert.ToDecimal(phiTreHan), dmbll.LaySoNgayThueTheoIDDia(tbIdDia.Text), ngayTraDiaDuKien, _IDPhieuThue);
-
-                    //kiểm tra list có rỗng ko
-                    if (listTtPhieuThue.Count() == 0)
+                    if (diabll.TrangThaiDia(tbIdDia.Text) == "duocdat")
                     {
-                        listTtPhieuThue.Add(ettpt);
-                        var bindingList = new BindingList<eThongTinPhieuThue>(listTtPhieuThue);
-                        var source = new BindingSource(bindingList, null);
-                        dataGridView1.DataSource = source;
-                        thayDoiThongTinPhieuThue(listTtPhieuThue);
-
-                        btnXoaKhoiPhieuThue.Enabled = true;
-                        btnXacNhanThue.Enabled = true;
-                        LoadCell();
-                        tbIdDia.Focus();
+                        XtraMessageBox.Show("Đĩa này đang ĐƯỢC ĐẶT bởi khách hàng khác");
                     }
-                    else if (listTtPhieuThue != null)
+                    else
                     {
-                        int temp = 0;
-                        foreach (eThongTinPhieuThue item in listTtPhieuThue)
-                        {
-                            if (item.IdDia == tbIdDia.Text)
-                            {
-                                temp = temp + 1;
-                            }
-                        }
-                        if (temp == 0)
+                        //Tạo đối tượng add vào list rồi đẩy ra datagridview
+                        DateTime ngayTraDiaDuKien = DateTime.Now.AddDays(dmbll.LaySoNgayThueTheoIDDia(tbIdDia.Text));
+                        string tenDia = tdbll.LayTenTieuDeBangIdDia(tbIdDia.Text);
+                        string tenDanhMuc = dmbll.LayTenDanhMucBangIdDia(tbIdDia.Text);
+                        decimal phiThue = dmbll.LayPhiThueBangIdDia(tbIdDia.Text);
+                        decimal phiTreHan = dmbll.LayPhiTreHanBangIdDia(tbIdDia.Text);
+                        eThongTinPhieuThue ettpt = new eThongTinPhieuThue(tbIdDia.Text, tenDia, tenDanhMuc, Convert.ToDecimal(phiThue), Convert.ToDecimal(phiTreHan), dmbll.LaySoNgayThueTheoIDDia(tbIdDia.Text), ngayTraDiaDuKien, _IDPhieuThue);
+
+                        //kiểm tra list có rỗng ko
+                        if (listTtPhieuThue.Count() == 0)
                         {
                             listTtPhieuThue.Add(ettpt);
                             var bindingList = new BindingList<eThongTinPhieuThue>(listTtPhieuThue);
@@ -256,12 +239,38 @@ namespace UI.Form_ChucNang
                             LoadCell();
                             tbIdDia.Focus();
                         }
-                        else if (temp > 0)
+                        else if (listTtPhieuThue != null)
                         {
-                            XtraMessageBox.Show(" ID Đĩa này đã có trong phiếu thuê, vui lòng nhập Đĩa khác !");
+                            int temp = 0;
+                            foreach (eThongTinPhieuThue item in listTtPhieuThue)
+                            {
+                                if (item.IdDia == tbIdDia.Text)
+                                {
+                                    temp = temp + 1;
+                                }
+                            }
+                            if (temp == 0)
+                            {
+                                listTtPhieuThue.Add(ettpt);
+                                var bindingList = new BindingList<eThongTinPhieuThue>(listTtPhieuThue);
+                                var source = new BindingSource(bindingList, null);
+                                dataGridView1.DataSource = source;
+                                thayDoiThongTinPhieuThue(listTtPhieuThue);
+
+                                btnXoaKhoiPhieuThue.Enabled = true;
+                                btnXacNhanThue.Enabled = true;
+                                LoadCell();
+                                tbIdDia.Focus();
+                            }
+                            else if (temp > 0)
+                            {
+                                XtraMessageBox.Show(" ID Đĩa này đã có trong phiếu thuê, vui lòng nhập Đĩa khác !");
+                            }
                         }
                     }
-                }   
+
+                }
+                  
             }
         }
 

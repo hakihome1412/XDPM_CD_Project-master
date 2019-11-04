@@ -4,7 +4,8 @@
     <Type Name="ChiTietPhieuDat">
       <Column Name="IdChiTietPhieuDat" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="IdTieuDe" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TenTieuDe" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NgayXuLyDonDat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="IdPhieuDat" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="TieuDe_ChiTietPhieuDat" Member="TieuDe" ThisKey="IdTieuDe" OtherKey="IdTieuDe" Type="TieuDe" IsForeignKey="true" />
       <Association Name="PhieuDat_ChiTietPhieuDat" Member="PhieuDat" ThisKey="IdPhieuDat" OtherKey="IdPhieuDat" Type="PhieuDat" IsForeignKey="true" />
