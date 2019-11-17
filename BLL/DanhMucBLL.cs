@@ -28,6 +28,21 @@ namespace BLL
             return maTD;
         }
 
+        public decimal PhiTreMin()
+        {
+            DanhMuc dm1 = db.DanhMucs.SingleOrDefault(p => p.TenDanhMuc == "DVD");
+            DanhMuc dm2 = db.DanhMucs.SingleOrDefault(p => p.TenDanhMuc == "Game");
+
+            decimal min = (decimal)dm1.PhiTreHan;
+
+            if(min > (decimal)dm2.PhiTreHan)
+            {
+                min = (decimal)dm2.PhiTreHan;
+                return min;
+            }
+            return min;
+        }
+
         public eDanhMuc LayDanhMucTheoIDDanhMuc(int idDanhMuc)
         {
             eDanhMuc dm = new eDanhMuc();

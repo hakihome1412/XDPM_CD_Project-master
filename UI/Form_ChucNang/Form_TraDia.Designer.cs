@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
+            this.tbIDKhachHang = new DevExpress.XtraEditors.TextEdit();
+            this.label14 = new System.Windows.Forms.Label();
             this.tbDiaChi = new DevExpress.XtraEditors.TextEdit();
             this.tbTenKhachHang = new DevExpress.XtraEditors.TextEdit();
             this.tbSDT = new DevExpress.XtraEditors.TextEdit();
@@ -69,10 +71,9 @@
             this.btnNhapDia = new DevExpress.XtraEditors.SimpleButton();
             this.label2 = new System.Windows.Forms.Label();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.label14 = new System.Windows.Forms.Label();
-            this.tbIDKhachHang = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
             this.groupControl7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbIDKhachHang.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbDiaChi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbTenKhachHang.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSDT.Properties)).BeginInit();
@@ -98,7 +99,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbIdDia.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbIDKhachHang.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl7
@@ -122,6 +122,26 @@
             this.groupControl7.Size = new System.Drawing.Size(526, 172);
             this.groupControl7.TabIndex = 88;
             this.groupControl7.Text = "Thông Tin Khách Hàng:";
+            // 
+            // tbIDKhachHang
+            // 
+            this.tbIDKhachHang.Enabled = false;
+            this.tbIDKhachHang.Location = new System.Drawing.Point(130, 29);
+            this.tbIDKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbIDKhachHang.Name = "tbIDKhachHang";
+            this.tbIDKhachHang.Size = new System.Drawing.Size(311, 20);
+            this.tbIDKhachHang.TabIndex = 84;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(29, 33);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(92, 13);
+            this.label14.TabIndex = 83;
+            this.label14.Text = "ID Khách Hàng:";
             // 
             // tbDiaChi
             // 
@@ -577,26 +597,6 @@
             this.groupControl2.TabIndex = 89;
             this.groupControl2.Text = "Thông Tin Thuê Đĩa:";
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(29, 33);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(92, 13);
-            this.label14.TabIndex = 83;
-            this.label14.Text = "ID Khách Hàng:";
-            // 
-            // tbIDKhachHang
-            // 
-            this.tbIDKhachHang.Enabled = false;
-            this.tbIDKhachHang.Location = new System.Drawing.Point(130, 29);
-            this.tbIDKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbIDKhachHang.Name = "tbIDKhachHang";
-            this.tbIDKhachHang.Size = new System.Drawing.Size(311, 20);
-            this.tbIDKhachHang.TabIndex = 84;
-            // 
             // Form_TraDia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -615,6 +615,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
             this.groupControl7.ResumeLayout(false);
             this.groupControl7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbIDKhachHang.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbDiaChi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbTenKhachHang.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSDT.Properties)).EndInit();
@@ -643,7 +644,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbIdDia.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tbIDKhachHang.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

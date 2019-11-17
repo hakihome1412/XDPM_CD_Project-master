@@ -74,7 +74,7 @@ namespace UI.Form_ChucNang
             tbTTPhiThueDia.Text = "";
             tbTTPhiTreHan.Text = "";
 
-
+            tbIDKhachHang.Text = "";
             tbTenKhachHang.Text = "";
             tbDiaChi.Text = "";
             tbSDT.Text = "";

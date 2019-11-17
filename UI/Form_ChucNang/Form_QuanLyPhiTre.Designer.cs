@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_QuanLyPhiTre));
             this.panelThaoTac = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.tbSoTienKhachTra = new DevExpress.XtraEditors.TextEdit();
+            this.label13 = new System.Windows.Forms.Label();
             this.btnXacNhanTraPhi = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -65,6 +68,7 @@
             this.tbNgayTraThucTe = new DevExpress.XtraEditors.TextEdit();
             this.tbSoNgayTre = new DevExpress.XtraEditors.TextEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.btnXoaPhiTre = new DevExpress.XtraEditors.SimpleButton();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,10 +76,9 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelThaoTac.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbSoTienKhachTra.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -101,13 +104,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbSoNgayTre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelThaoTac
             // 
             this.panelThaoTac.Controls.Add(this.checkBox1);
-            this.panelThaoTac.Controls.Add(this.textEdit1);
+            this.panelThaoTac.Controls.Add(this.tbSoTienKhachTra);
             this.panelThaoTac.Controls.Add(this.label13);
             this.panelThaoTac.Controls.Add(this.btnXacNhanTraPhi);
             this.panelThaoTac.Location = new System.Drawing.Point(25, 24);
@@ -116,16 +118,51 @@
             this.panelThaoTac.Size = new System.Drawing.Size(449, 115);
             this.panelThaoTac.TabIndex = 3;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Enabled = false;
+            this.checkBox1.Location = new System.Drawing.Point(21, 19);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(112, 17);
+            this.checkBox1.TabIndex = 98;
+            this.checkBox1.Text = "Thanh toán tất cả";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBox1.CheckStateChanged += new System.EventHandler(this.checkBox1_CheckStateChanged);
+            // 
+            // tbSoTienKhachTra
+            // 
+            this.tbSoTienKhachTra.Enabled = false;
+            this.tbSoTienKhachTra.Location = new System.Drawing.Point(21, 75);
+            this.tbSoTienKhachTra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbSoTienKhachTra.Name = "tbSoTienKhachTra";
+            this.tbSoTienKhachTra.Size = new System.Drawing.Size(171, 20);
+            this.tbSoTienKhachTra.TabIndex = 97;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(18, 51);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(110, 13);
+            this.label13.TabIndex = 94;
+            this.label13.Text = "Số Tiền Khách Trả:";
+            // 
             // btnXacNhanTraPhi
             // 
-            this.btnXacNhanTraPhi.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.btnXacNhanTraPhi.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.btnXacNhanTraPhi.Appearance.Options.UseFont = true;
-            this.btnXacNhanTraPhi.Location = new System.Drawing.Point(206, 19);
+            this.btnXacNhanTraPhi.Enabled = false;
+            this.btnXacNhanTraPhi.Location = new System.Drawing.Point(198, 15);
             this.btnXacNhanTraPhi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXacNhanTraPhi.Name = "btnXacNhanTraPhi";
-            this.btnXacNhanTraPhi.Size = new System.Drawing.Size(240, 76);
+            this.btnXacNhanTraPhi.Size = new System.Drawing.Size(248, 85);
             this.btnXacNhanTraPhi.TabIndex = 11;
             this.btnXacNhanTraPhi.Text = "Xác Nhận Trả Phí Trễ";
+            this.btnXacNhanTraPhi.Click += new System.EventHandler(this.btnXacNhanTraPhi_Click);
             // 
             // groupControl3
             // 
@@ -314,7 +351,8 @@
             this.dataGridViewTextBoxColumn6,
             this.Column2,
             this.dataGridViewTextBoxColumn8,
-            this.Column1});
+            this.Column1,
+            this.Column3});
             this.dataGridView2.Location = new System.Drawing.Point(5, 23);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.MultiSelect = false;
@@ -323,14 +361,17 @@
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(863, 256);
+            this.dataGridView2.Size = new System.Drawing.Size(878, 216);
             this.dataGridView2.TabIndex = 1;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // groupControl1
             // 
             this.groupControl1.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.groupControl1.Appearance.Options.UseBackColor = true;
             this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.groupControl1.Controls.Add(this.btnXoaPhiTre);
             this.groupControl1.Controls.Add(this.dataGridView2);
             this.groupControl1.Location = new System.Drawing.Point(272, 4);
             this.groupControl1.LookAndFeel.SkinName = "Office 2010 Blue";
@@ -532,6 +573,19 @@
             this.groupControl2.TabIndex = 59;
             this.groupControl2.Text = "Thông tin đĩa thuê:";
             // 
+            // btnXoaPhiTre
+            // 
+            this.btnXoaPhiTre.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.btnXoaPhiTre.Appearance.Options.UseFont = true;
+            this.btnXoaPhiTre.Enabled = false;
+            this.btnXoaPhiTre.Location = new System.Drawing.Point(317, 243);
+            this.btnXoaPhiTre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnXoaPhiTre.Name = "btnXoaPhiTre";
+            this.btnXoaPhiTre.Size = new System.Drawing.Size(248, 37);
+            this.btnXoaPhiTre.TabIndex = 99;
+            this.btnXoaPhiTre.Text = "Xóa Phí Trễ";
+            this.btnXoaPhiTre.Click += new System.EventHandler(this.btnXoaPhiTre_Click);
+            // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "IdDia";
@@ -587,36 +641,13 @@
             this.Column1.ReadOnly = true;
             this.Column1.Width = 150;
             // 
-            // label13
+            // Column3
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(18, 51);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(110, 13);
-            this.label13.TabIndex = 94;
-            this.label13.Text = "Số Tiền Khách Trả:";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Enabled = false;
-            this.textEdit1.Location = new System.Drawing.Point(21, 75);
-            this.textEdit1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(171, 20);
-            this.textEdit1.TabIndex = 97;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(21, 19);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(112, 17);
-            this.checkBox1.TabIndex = 98;
-            this.checkBox1.Text = "Thanh toán tất cả";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.Column3.DataPropertyName = "IdChiTietPhieuThue";
+            this.Column3.HeaderText = "ID Chi Tiết Phiếu Thuê";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Visible = false;
             // 
             // Form_QuanLyPhiTre
             // 
@@ -631,11 +662,13 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form_QuanLyPhiTre";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản Lý Phí Trễ";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_QuanLyPhiTre_FormClosed);
             this.Load += new System.EventHandler(this.Form_QuanLyPhiTre_Load);
             this.panelThaoTac.ResumeLayout(false);
             this.panelThaoTac.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbSoTienKhachTra.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -664,7 +697,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -707,6 +739,10 @@
         private DevExpress.XtraEditors.TextEdit tbNgayTraThucTe;
         private DevExpress.XtraEditors.TextEdit tbSoNgayTre;
         private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraEditors.TextEdit tbSoTienKhachTra;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private DevExpress.XtraEditors.SimpleButton btnXoaPhiTre;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
@@ -714,8 +750,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }

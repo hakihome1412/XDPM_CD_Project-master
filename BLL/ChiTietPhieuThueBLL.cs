@@ -28,18 +28,6 @@ namespace BLL
             return idctpt;
         }
 
-        //public bool ThayDoiTrangThaiNoPhiTreTatCa(List<eThongTinPhieuThue> list,string idKhachHang)
-        //{
-        //    //List<ChiTietPhieuThue> listchinh = new List<ChiTietPhieuThue>();
-        //    foreach (var item in list)
-        //    {
-        //        foreach (var itemm in db.ChiTietPhieuThues)
-        //        {
-        //            if
-        //        }
-        //    }
-        //    if(db.ChiTietPhieuThues.Contains())
-        //}
 
         public List<eThongTinPhieuThue> DanhSachPhiTretheoIDKhachHang(string idKhachHang)
         {
@@ -74,6 +62,116 @@ namespace BLL
             return list;
             
         }
+
+        
+        public List<ChiTietPhieuThue> DanhSachNoPhiTre(string idKhachHang)
+        {
+            int trangthai = 0;
+            List<ChiTietPhieuThue> list = new List<ChiTietPhieuThue>();
+
+            var listtam = (from a in db.KhachHangs
+                           join b in db.PhieuThues on a.IdKhachHang equals b.IdKhachHang
+                           join c in db.ChiTietPhieuThues on b.IdPhieuThue equals c.IdPhieuThue
+                           join d in db.Dias on c.IdDia equals d.IdDia
+                           join e in db.TieuDes on d.IdTieuDe equals e.IdTieuDe
+                           join f in db.DanhMucs on e.IdDanhMuc equals f.IdDanhMuc
+                           where a.IdKhachHang == idKhachHang && c.TrangThaiNoPhiTre == true && c.TrangThaiTraPhiTre == false && c.NgayTraDiaThucTe != null
+                           select new
+                           {
+                               c.IdChiTietPhieuThue,
+                               b.NgayTao,
+                               c.NgayTraDiaDuKien,
+                               c.NgayTraDiaThucTe,
+                               d.IdDia,
+                               f.TenDanhMuc,
+                               e.TenTieuDe,
+                               f.PhiTreHan
+                           });
+
+            foreach (var item in listtam)
+            {
+                foreach (var itemDB in db.ChiTietPhieuThues)
+                {
+                    if(item.IdChiTietPhieuThue == itemDB.IdChiTietPhieuThue)
+                    {
+                        ChiTietPhieuThue ct = new ChiTietPhieuThue();
+                        ct = (ChiTietPhieuThue) itemDB;
+                        list.Add(ct);
+                        trangthai++;
+                    }
+                }
+            }
+
+            if (trangthai == 0)
+                return null;
+            return list;
+        }
+
+        public bool ThayDoiTrangThaiNoPhiTreTatCa(string idKhachHang)
+        {
+            int trangthai = 0;
+            List<ChiTietPhieuThue> list = DanhSachNoPhiTre(idKhachHang);
+            foreach (ChiTietPhieuThue item in list)
+            {
+                foreach (ChiTietPhieuThue itemDB in db.ChiTietPhieuThues)
+                {
+                    if(item.IdChiTietPhieuThue == itemDB.IdChiTietPhieuThue && item.TrangThaiNoPhiTre == true && item.TrangThaiTraPhiTre == false)
+                    {
+                        itemDB.TrangThaiTraPhiTre = true;
+                        trangthai++;
+                    }
+                }
+            }
+            db.SubmitChanges();
+
+            if (trangthai == 0)
+                return false;
+            return true;
+        }
+
+        public bool XoaMotKhoanPhiTre(int idChiTiet)
+        {
+            ChiTietPhieuThue ct = db.ChiTietPhieuThues.SingleOrDefault(p => p.IdChiTietPhieuThue == idChiTiet);
+
+            if (ct == null)
+                return false;
+            ct.TrangThaiNoPhiTre = false;
+            db.SubmitChanges();
+            return true;
+        }
+
+        public decimal ThayDoiTrangThaiNoPhiTreWithMoney(string idKhachHang, decimal tienkhach)
+        {
+            decimal money = tienkhach;
+            List<ChiTietPhieuThue> list = DanhSachNoPhiTre(idKhachHang);
+            foreach (ChiTietPhieuThue item in list)
+            {
+                foreach (ChiTietPhieuThue itemDB in db.ChiTietPhieuThues)
+                {
+                    if (item.IdChiTietPhieuThue == itemDB.IdChiTietPhieuThue && item.TrangThaiNoPhiTre == true && item.TrangThaiTraPhiTre == false)
+                    {
+                        if (money >= itemDB.PhiTre && money > 0)
+                        {
+                            itemDB.TrangThaiTraPhiTre = true;
+                            decimal db = (decimal)itemDB.PhiTre;
+                            money -= db;
+                        }
+                        //else
+                        //{
+                        //    return money;
+                        //    break;
+                        //}
+                            
+                    }
+                }
+            }
+
+            db.SubmitChanges();
+            return money;
+        }
+
+
+
 
         public eThongTinPhieuThue LayThongTinPhieuThue(string idDia,string idKhachHang)
         {
@@ -152,64 +250,6 @@ namespace BLL
                 return true;
             }
             return false;
-        }
-      
-        public bool CapNhatKhoanNoCuaKhachHang(string idKhachHang)
-        {
-            int count = 0;
-            var khs = (from a in db.KhachHangs
-                                   join b in db.PhieuThues on a.IdKhachHang equals b.IdKhachHang
-                                   join c in db.ChiTietPhieuThues on b.IdPhieuThue equals c.IdPhieuThue
-                                   join d in db.Dias on c.IdDia equals d.IdDia
-                                   join e in db.TieuDes on d.IdTieuDe equals e.IdTieuDe
-                                   join g in db.DanhMucs on e.IdDanhMuc equals g.IdDanhMuc
-                                   where a.IdKhachHang == idKhachHang && c.TrangThaiNoPhiTre == true && c.TrangThaiTraPhiTre == false
-                       select new {
-                                       b.NgayTao,
-                                       c.NgayTraDiaDuKien,
-                                       c.NgayTraDiaThucTe,
-                                       g.PhiTreHan,
-                                       c.IdChiTietPhieuThue
-                                   }).ToList();
-
-            foreach (var item in khs)
-            {
-                ChiTietPhieuThue ctpt = new ChiTietPhieuThue();
-                ctpt = db.ChiTietPhieuThues.Where(x => x.IdChiTietPhieuThue == item.IdChiTietPhieuThue).SingleOrDefault();
-                int soNgayTreHan;
-              
-                //DateTime a = new DateTime(2019, 10, 15);//some datetime
-                DateTime ngayHienTai = DateTime.Now;
-
-                if(DateTime.Compare(ngayHienTai, Convert.ToDateTime(ctpt.NgayTraDiaDuKien)) > 0)
-                {
-                    TimeSpan ts = ngayHienTai - Convert.ToDateTime(ctpt.NgayTraDiaDuKien);
-                    soNgayTreHan = Math.Abs(ts.Days);
-                    if (soNgayTreHan > 0)
-                    {
-                        decimal phiTre = (decimal)item.PhiTreHan;
-                    }
-                    count = count + 1;
-                }                  
-
-            }
-            if(count > 0)
-            {
-                return true;
-            }
-            return false;
-
-        }
-      
-        public decimal LayKhoanNoCuaKhachHang(string idKhachHang)
-        {
-            
-            decimal phiPhaiTra = (from a in db.KhachHangs
-                       join b in db.PhieuThues on a.IdKhachHang equals b.IdKhachHang
-                       join c in db.ChiTietPhieuThues on b.IdPhieuThue equals c.IdPhieuThue
-                       where a.IdKhachHang == idKhachHang && c.TrangThaiNoPhiTre ==  true && c.TrangThaiTraPhiTre == false
-                       select (decimal) c.PhiTre).Sum();
-            return phiPhaiTra;
         }
 
     }   
